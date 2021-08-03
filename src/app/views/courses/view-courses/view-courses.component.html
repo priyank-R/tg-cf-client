@@ -1,0 +1,40 @@
+<table class="table table-responsive">
+  <thead>
+    <tr>
+      <th >academicRequirements</th>
+      <th >academicTypeId</th>
+      <th >childOf</th>
+      <th >countryId</th>
+      <th >courseTypeId</th>
+      <th >courseUUID</th>
+      <th >duration</th>
+
+      <th >fees</th>
+      <th >intake</th>
+      <th >name</th>
+      <th >otherRequirements</th>
+      <th >prerequisites</th>
+      <th >uniId</th>
+      <th >updatedAt</th>
+    </tr>
+  </thead>
+  <tbody >
+    <tr  *ngFor="let c of courses">
+      <th >{{c.academicRequirements}}</th>
+      <th >{{c.academicTypeId}}</th>
+      <th >{{c.childOf}}</th>
+      <th >{{c.countryId}}</th>
+      <th >{{c.courseTypeId}}</th>
+      <th >{{c.courseUUID}}</th>
+      <th >{{c.duration}}</th>
+
+      <th >{{c.fees}}</th>
+      <th >{{c.intake}}</th>
+      <th >{{c.name}}</th>
+      <th >{{c.otherRequirements}}</th>
+      <th >{{c.prerequisites}}</th>
+      <th >{{c.uniId}}</th>
+      <th >{{c.updatedAt}}</th>
+    </tr>
+  </tbody>
+</table>

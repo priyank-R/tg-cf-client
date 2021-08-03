@@ -26,25 +26,25 @@ export class DashboardComponent implements OnInit {
     //   this.router.navigate(['/login']);
     // }
 
-    this.courseService.getCourses({}).subscribe(res => {
-      console.log(res.rows)
-      this.courses = res.rows;
-    });
+    // this.courseService.getCourses({}).subscribe(res => {
+    //   console.log(res.rows)
+    //   this.courses = res.rows;
+    // });
 
-    const body : University= {
-      "name":"XYZ University",
-      "childOf": 2,
-      "city": "UAE",
-      "stateId": "4",
-      "countryId": "38",
-      "overview": "great university",
-      "globalRank": 4,
-      "ieltsAccepted":true,
-      "uniEmail":"rg@hotmail.com"
-    }
-    this.universitiesService.addUniversity(body).subscribe(res => {
-      console.log(res);
-    })
+    // const body : University= {
+    //   "name":"XYZ University",
+    //   "childOf": 2,
+    //   "city": "UAE",
+    //   "stateId": "4",
+    //   "countryId": "38",
+    //   "overview": "great university",
+    //   "globalRank": 4,
+    //   "ieltsAccepted":true,
+    //   "uniEmail":"rg@hotmail.com"
+    // }
+    // this.universitiesService.addUniversity(body).subscribe(res => {
+    //   console.log(res);
+    // })
 
 
   }

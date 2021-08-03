@@ -44,6 +44,8 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CoursesRoutingModule } from './views/courses/courses-routing.module';
+import { UniversitiesRoutingModule } from './views/universities/universities-routing.module';
 
 @NgModule({
   imports: [
@@ -62,7 +64,9 @@ import { HttpClientModule } from '@angular/common/http';
     IconModule,
     IconSetModule.forRoot(),
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CoursesRoutingModule,
+    UniversitiesRoutingModule,
   ],
   declarations: [
     AppComponent,
@@ -70,13 +74,15 @@ import { HttpClientModule } from '@angular/common/http';
     P404Component,
     P500Component,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
   ],
   providers: [
     {
       provide: LocationStrategy,
-      useClass: HashLocationStrategy
+      useClass: HashLocationStrategy,
+
     },
+
     IconSetService,
   ],
   bootstrap: [ AppComponent ]
