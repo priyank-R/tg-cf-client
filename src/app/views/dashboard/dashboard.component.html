@@ -1,0 +1,126 @@
+<table class="table table-responsive">
+  <thead>
+    <tr>
+      <th >academicRequirements</th>
+      <th >academicTypeId</th>
+      <th >childOf</th>
+      <th >countryId</th>
+      <th >courseTypeId</th>
+      <th >courseUUID</th>
+      <th >duration</th>
+
+      <th >fees</th>
+      <th >intake</th>
+      <th >name</th>
+      <th >otherRequirements</th>
+      <th >prerequisites</th>
+      <th >uniId</th>
+      <th >updatedAt</th>
+    </tr>
+  </thead>
+  <tbody >
+    <tr  *ngFor="let c of courses">
+      <th >{{c.academicRequirements}}</th>
+      <th >{{c.academicTypeId}}</th>
+      <th >{{c.childOf}}</th>
+      <th >{{c.countryId}}</th>
+      <th >{{c.courseTypeId}}</th>
+      <th >{{c.courseUUID}}</th>
+      <th >{{c.duration}}</th>
+
+      <th >{{c.fees}}</th>
+      <th >{{c.intake}}</th>
+      <th >{{c.name}}</th>
+      <th >{{c.otherRequirements}}</th>
+      <th >{{c.prerequisites}}</th>
+      <th >{{c.uniId}}</th>
+      <th >{{c.updatedAt}}</th>
+    </tr>
+  </tbody>
+</table>
+
+<!-- <div class="animated fadeIn" *ngFor="let c of courses" >
+    <div class="card">
+      <div class="card">
+        <div class="card-header">
+          <strong>{{c.name}}</strong>
+          <small>{{c.academicTypeId}}</small>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="academicRequirements">academicRequirements</label>
+            <h4 type="text">{{c.academicRequirements}} </h4>
+          </div>
+
+          <div class="form-group">
+            <label for="academicTypeId">academicTypeId</label>
+            <h4 type="text">{{c.academicTypeId}} </h4>
+          </div>
+
+          <div class="form-group">
+            <label for="childOf">childOf</label>
+            <h4 type="text">{{c.childOf}} </h4>
+          </div>
+
+          <div class="form-group">
+            <label for="countryId">countryId</label>
+            <h4 type="text">{{c.countryId}} </h4>
+          </div>
+
+
+          <div class="form-group">
+            <label for="courseTypeId">courseTypeId</label>
+            <h4 type="text">{{c.courseTypeId}} </h4>
+          </div>
+
+          <div class="form-group">
+            <label for="courseUUID">courseUUID</label>
+            <h4 type="text">{{c.courseUUID}} </h4>
+          </div>
+
+          <div class="form-group">
+            <label for="duration">duration</label>
+            <h4 type="text">{{c.duration}} </h4>
+          </div>
+
+          <div class="form-group">
+            <label for="fees">fees</label>
+            <h4 type="text">{{c.fees}} </h4>
+          </div>
+
+
+          <div class="form-group">
+            <label for="intake">intake</label>
+            <h4 type="text">{{c.intake}} </h4>
+          </div>
+
+
+          <div class="form-group">
+            <label for="name">name</label>
+            <h4 type="text">{{c.name}} </h4>
+          </div>
+
+          <div class="form-group">
+            <label for="otherRequirements">otherRequirements</label>
+            <h4 type="text">{{c.otherRequirements}} </h4>
+          </div>
+
+          <div class="form-group">
+            <label for="prerequisites">prerequisites</label>
+            <h4 type="text">{{c.prerequisites}} </h4>
+          </div>
+
+          <div class="form-group">
+            <label for="uniId">uniId</label>
+            <h4 type="text">{{c.uniId}} </h4>
+          </div>
+
+          <div class="form-group">
+            <label for="updatedAt">updatedAt</label>
+            <h4 type="text">{{c.updatedAt | date}} </h4>
+          </div>
+
+
+      </div>
+    </div>
+  </div> -->
