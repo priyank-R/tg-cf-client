@@ -12,7 +12,6 @@ export class AddUniversitiesComponent implements OnInit {
   form;
   options;
   submission;
-  refreshForm;
 
 
 
@@ -22,19 +21,6 @@ export class AddUniversitiesComponent implements OnInit {
 
   ngOnInit(): void {
     this.form =  (addUniversityFormioJson as any).default;
-    // this.submission = {
-    //   "data": {
-    //       "name": "1",
-    //       "city": "1",
-    //       "stateId": "1",
-    //       "countryId": "1",
-    //       "overview": "1",
-    //       "ieltsAccepted": true,
-    //       "uniEmail": "xyz@xyz.com",
-    //       "childOf": 1,
-    //       "globalRank": 1
-    //   }
-    // }
   }
 
   onSubmit(submission: any) {
@@ -42,12 +28,7 @@ export class AddUniversitiesComponent implements OnInit {
     this.universitiesService.addUniversity(submission.data).subscribe((res) => {
       console.log(res);
       console.log(submission);
-      this.form =  (addUniversityFormioJson as any).default;
       this.ngOnInit();
-      this.refreshForm.emit({
-        property: 'form',
-        value: this.form
-        });
     })
   }
 

@@ -7,6 +7,7 @@ import { UniversitiesRoutingModule } from './universities-routing.module';
 
 import { FormioModule, FormioAppConfig } from 'angular-formio';
 import { AppConfig } from '../../../assets/formio-config';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -20,7 +21,9 @@ import { AppConfig } from '../../../assets/formio-config';
   imports: [
     CommonModule,
     UniversitiesRoutingModule,
-    FormioModule
+    FormioModule,
+    NgbModule
+
   ],
   providers: [
     {provide: FormioAppConfig, useValue: AppConfig},

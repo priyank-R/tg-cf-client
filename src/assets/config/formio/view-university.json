@@ -1,12 +1,9 @@
 {
   "components": [
       {
-          "label": "Enter University Name",
+          "label": "University Name",
           "disabled": true,
           "tableView": true,
-          "validate": {
-              "required": true
-          },
           "key": "name",
           "type": "textfield",
           "input": true
@@ -17,7 +14,7 @@
               {
                   "components": [
                       {
-                          "label": "Enter Child Of",
+                          "label": "Child Of",
                           "disabled": true,
                           "mask": false,
                           "spellcheck": true,
@@ -40,12 +37,9 @@
               {
                   "components": [
                       {
-                          "label": "Enter City",
+                          "label": "City",
                           "disabled": true,
                           "tableView": true,
-                          "validate": {
-                              "required": true
-                          },
                           "key": "city",
                           "type": "textfield",
                           "input": true,
@@ -70,12 +64,9 @@
               {
                   "components": [
                       {
-                          "label": "Enter State Id",
+                          "label": "State Id",
                           "disabled": true,
                           "tableView": true,
-                          "validate": {
-                              "required": true
-                          },
                           "key": "stateId",
                           "type": "textfield",
                           "input": true,
@@ -91,12 +82,9 @@
               {
                   "components": [
                       {
-                          "label": "Enter Country Id ",
+                          "label": "Country Id ",
                           "disabled": true,
                           "tableView": true,
-                          "validate": {
-                              "required": true
-                          },
                           "key": "countryId",
                           "type": "textfield",
                           "input": true,
@@ -116,7 +104,7 @@
           "tableView": false
       },
       {
-          "label": "Enter Overview",
+          "label": " Overview",
           "disabled": true,
           "autoExpand": false,
           "tableView": true,
@@ -130,7 +118,7 @@
               {
                   "components": [
                       {
-                          "label": "Enter Global Rank",
+                          "label": "Global Rank",
                           "disabled": true,
                           "mask": false,
                           "spellcheck": true,
@@ -138,9 +126,6 @@
                           "delimiter": false,
                           "requireDecimal": false,
                           "inputFormat": "plain",
-                          "validate": {
-                              "required": true
-                          },
                           "key": "globalRank",
                           "type": "number",
                           "input": true,
@@ -156,12 +141,9 @@
               {
                   "components": [
                       {
-                          "label": "Enter University Email",
+                          "label": "University Email",
                           "disabled": true,
                           "tableView": true,
-                          "validate": {
-                              "required": true
-                          },
                           "key": "uniEmail",
                           "type": "email",
                           "input": true,
@@ -191,14 +173,5 @@
           "hideOnChildrenHidden": false,
           "labelMargin": 3
       }
-      // {
-      //     "label": "Submit",
-      //     "showValidations": false,
-      //     "disableOnInvalid": true,
-      //     "tableView": false,
-      //     "key": "submit",
-      //     "type": "button",
-      //     "input": true
-      // }
   ]
 }
