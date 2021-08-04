@@ -16,11 +16,13 @@ export class AddUniversitiesComponent implements OnInit {
 
 
   constructor(
-    private universitiesService: UniversitiesService
+    private universitiesService: UniversitiesService,
+
   ) { }
 
   ngOnInit(): void {
     this.form =  (addUniversityFormioJson as any).default;
+
   }
 
   onSubmit(submission: any) {
@@ -31,5 +33,7 @@ export class AddUniversitiesComponent implements OnInit {
       this.ngOnInit();
     })
   }
+
+
 
 }

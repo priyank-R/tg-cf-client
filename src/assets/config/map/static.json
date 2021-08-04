@@ -1,0 +1,4520 @@
+{
+    "permissions": [
+        "APPLICATION",
+        "LEAD",
+        "COACHING",
+        "CALENDAR",
+        "USER",
+        "REMARKETING",
+        "EMAIL",
+        "STATS",
+        "COURSEFINDER"
+    ],
+    "scopes": [{
+            "scope": "leads",
+            "scopeType": [
+                "all",
+                "branch",
+                "users",
+                "none"
+            ]
+        },
+        {
+            "scope": "users",
+            "scopeType": [
+                "all",
+                "branch",
+                "users",
+                "none"
+            ]
+        },
+        {
+            "scope": "applications",
+            "scopeType": [
+                "all",
+                "branch",
+                "users",
+                "none"
+            ]
+        }
+    ],
+    "academicTypes": [{
+            "academicTypeValue": 1,
+            "academicTypeName": "IELTS"
+        },
+        {
+            "academicTypeValue": 2,
+            "academicTypeName": "GMAT"
+        },
+        {
+            "academicTypeValue": 3,
+            "academicTypeName": "10"
+        },
+        {
+            "academicTypeValue": 4,
+            "academicTypeName": "12"
+        },
+        {
+            "academicTypeValue": 5,
+            "academicTypeName": "Bachelors"
+        },
+        {
+            "academicTypeValue": 6,
+            "academicTypeName": "Masters"
+        },
+        {
+            "academicTypeValue": 7,
+            "academicTypeName": "Diploma"
+        },
+        {
+            "academicTypeValue": 8,
+            "academicTypeName": "PTE"
+        },
+        {
+            "academicTypeValue": 9,
+            "academicTypeName": "GRE"
+        },
+        {
+            "academicTypeValue": 10,
+            "academicTypeName": "SAT"
+        },
+        {
+            "academicTypeValue": 11,
+            "academicTypeName": "TOEFL"
+        }
+    ],
+    "courseTypes": [{
+            "courseTypeName": "Natural Sciences",
+            "courseTypeValue": 1,
+            "childOf": null
+        },
+        {
+            "courseTypeName": "Mathematics",
+            "courseTypeValue": 2,
+            "childOf": null
+        },
+        {
+            "courseTypeName": "Computer Science",
+            "courseTypeValue": 3,
+            "childOf": null
+        },
+        {
+            "courseTypeName": "Algorithms ",
+            "courseTypeValue": 4,
+            "childOf": 3
+        },
+        {
+            "courseTypeName": "Web development ",
+            "courseTypeValue": 5,
+            "childOf": 3
+        },
+        {
+            "courseTypeName": "Software Design",
+            "courseTypeValue": 6,
+            "childOf": 3
+        },
+        {
+            "courseTypeName": "Performance Art",
+            "courseTypeValue": 7,
+            "childOf": 3
+        },
+        {
+            "courseTypeName": "Management ",
+            "courseTypeValue": 8,
+            "childOf": null
+        },
+        {
+            "courseTypeName": "Logistics Management",
+            "courseTypeValue": 9,
+            "childOf": 8
+        }
+    ],
+    "leadSources": [{
+            "leadSourceName": "Newspaper",
+            "leadSourceValue": 1,
+            "childOf": null
+        },
+        {
+            "leadSourceName": "Social Media",
+            "leadSourceValue": 2,
+            "childOf": null
+        },
+        {
+            "leadSourceName": "Google Ads",
+            "leadSourceValue": 3,
+            "childOf": null
+        },
+        {
+            "leadSourceName": "Facebook",
+            "leadSourceValue": 4,
+            "childOf": 2
+        },
+        {
+            "leadSourceName": "Instagram",
+            "leadSourceValue": 5,
+            "childOf": 2
+        },
+        {
+            "leadSourceName": "Reference",
+            "leadSourceValue": 6,
+            "childOf": null
+        },
+        {
+            "leadSourceName": "Other",
+            "leadSourceValue": 7,
+            "childOf": null
+        }
+    ],
+    "branches": [{
+            "branchId": 1,
+            "branchName": "Rajkot",
+            "branchCity": "Rajkot",
+            "branchOf": null
+        },
+        {
+            "branchId": 2,
+            "branchName": "Ahmedabad",
+            "branchCity": "Ahmedabad",
+            "branchOf": null
+        },
+        {
+            "branchId": 3,
+            "branchName": "Surat",
+            "branchCity": "Surat",
+            "branchOf": null
+        },
+        {
+            "branchId": 4,
+            "branchName": "Junagadh",
+            "branchCity": "Junagadh",
+            "branchOf": null
+        }
+    ],
+    "countries": [{
+            "countryName": "Afghanistan",
+            "countryCode": "AFG",
+            "dial": "+93",
+            "countryId": 1
+        },
+        {
+            "countryName": "Albania",
+            "countryCode": "ALB",
+            "dial": "+355",
+            "countryId": 2
+        },
+        {
+            "countryName": "Algeria",
+            "countryCode": "DZA",
+            "dial": "+213",
+            "countryId": 3
+        },
+        {
+            "countryName": "American Samoa",
+            "countryCode": "ASM",
+            "dial": "+1",
+            "countryId": 4
+        },
+        {
+            "countryName": "Andorra",
+            "countryCode": "AND",
+            "dial": "+376",
+            "countryId": 5
+        },
+        {
+            "countryName": "Angola",
+            "countryCode": "AGO",
+            "dial": "+244",
+            "countryId": 6
+        },
+        {
+            "countryName": "Anguilla",
+            "countryCode": "AIA",
+            "dial": "+1",
+            "countryId": 7
+        },
+        {
+            "countryName": "Antigua and Barbuda",
+            "countryCode": "ATG",
+            "dial": "+1",
+            "countryId": 8
+        },
+        {
+            "countryName": "Argentina",
+            "countryCode": "ARG",
+            "dial": "+54",
+            "countryId": 9
+        },
+        {
+            "countryName": "Armenia",
+            "countryCode": "ARM",
+            "dial": "+374",
+            "countryId": 10
+        },
+        {
+            "countryName": "Aruba",
+            "countryCode": "ABW",
+            "dial": "+297",
+            "countryId": 11
+        },
+        {
+            "countryName": "Australia",
+            "countryCode": "AUS",
+            "dial": "+61",
+            "countryId": 12
+        },
+        {
+            "countryName": "Austria",
+            "countryCode": "AUT",
+            "dial": "+43",
+            "countryId": 13
+        },
+        {
+            "countryName": "Azerbaijan",
+            "countryCode": "AZE",
+            "dial": "+994",
+            "countryId": 14
+        },
+        {
+            "countryName": "Bahrain",
+            "countryCode": "BHR",
+            "dial": "+973",
+            "countryId": 15
+        },
+        {
+            "countryName": "Bangladesh",
+            "countryCode": "BGD",
+            "dial": "+880",
+            "countryId": 16
+        },
+        {
+            "countryName": "Barbados",
+            "countryCode": "BRB",
+            "dial": "+1",
+            "countryId": 17
+        },
+        {
+            "countryName": "Belarus",
+            "countryCode": "BLR",
+            "dial": "+375",
+            "countryId": 18
+        },
+        {
+            "countryName": "Belgium",
+            "countryCode": "BEL",
+            "dial": "+32",
+            "countryId": 19
+        },
+        {
+            "countryName": "Belize",
+            "countryCode": "BLZ",
+            "dial": "+501",
+            "countryId": 20
+        },
+        {
+            "countryName": "Benin",
+            "countryCode": "BEN",
+            "dial": "+229",
+            "countryId": 21
+        },
+        {
+            "countryName": "Bermuda",
+            "countryCode": "BMU",
+            "dial": "+1",
+            "countryId": 22
+        },
+        {
+            "countryName": "Bhutan",
+            "countryCode": "BTN",
+            "dial": "+975",
+            "countryId": 23
+        },
+        {
+            "countryName": "Bolivia",
+            "countryCode": "BOL",
+            "dial": "+591",
+            "countryId": 24
+        },
+        {
+            "countryName": "Bonaire, Sint Eustatius and Saba",
+            "countryCode": "BES",
+            "dial": "+599",
+            "countryId": 25
+        },
+        {
+            "countryName": "Bosnia and Herzegovina",
+            "countryCode": "BIH",
+            "dial": "+387",
+            "countryId": 26
+        },
+        {
+            "countryName": "Botswana",
+            "countryCode": "BWA",
+            "dial": "+267",
+            "countryId": 27
+        },
+        {
+            "countryName": "Brazil",
+            "countryCode": "BRA",
+            "dial": "+55",
+            "countryId": 28
+        },
+        {
+            "countryName": "British Indian Ocean Territory",
+            "countryCode": "IOT",
+            "dial": "+246",
+            "countryId": 29
+        },
+        {
+            "countryName": "British Virgin Islands",
+            "countryCode": "VGB",
+            "dial": "+1",
+            "countryId": 30
+        },
+        {
+            "countryName": "Brunei Darussalam",
+            "countryCode": "BRN",
+            "dial": "+673",
+            "countryId": 31
+        },
+        {
+            "countryName": "Bulgaria",
+            "countryCode": "BGR",
+            "dial": "+359",
+            "countryId": 32
+        },
+        {
+            "countryName": "Burkina Faso",
+            "countryCode": "BFA",
+            "dial": "+226",
+            "countryId": 33
+        },
+        {
+            "countryName": "Myanmar",
+            "countryCode": "MMR",
+            "dial": "+95",
+            "countryId": 34
+        },
+        {
+            "countryName": "Burundi",
+            "countryCode": "BDI",
+            "dial": "+257",
+            "countryId": 35
+        },
+        {
+            "countryName": "Cambodia",
+            "countryCode": "KHM",
+            "dial": "+855",
+            "countryId": 36
+        },
+        {
+            "countryName": "Cameroon",
+            "countryCode": "CMR",
+            "dial": "+237",
+            "countryId": 37
+        },
+        {
+            "countryName": "Canada",
+            "countryCode": "CAN",
+            "dial": "+1",
+            "countryId": 38
+        },
+        {
+            "countryName": "Cabo Verde",
+            "countryCode": "CPV",
+            "dial": "+238",
+            "countryId": 39
+        },
+        {
+            "countryName": "Cayman Islands",
+            "countryCode": "CYM",
+            "dial": "+1",
+            "countryId": 40
+        },
+        {
+            "countryName": "Central African Republic",
+            "countryCode": "CAF",
+            "dial": "+236",
+            "countryId": 41
+        },
+        {
+            "countryName": "Chad",
+            "countryCode": "TCD",
+            "dial": "+235",
+            "countryId": 42
+        },
+        {
+            "countryName": "Chile",
+            "countryCode": "CHL",
+            "dial": "+56",
+            "countryId": 43
+        },
+        {
+            "countryName": "China",
+            "countryCode": "CHN",
+            "dial": "+86",
+            "countryId": 44
+        },
+        {
+            "countryName": "Colombia",
+            "countryCode": "COL",
+            "dial": "+57",
+            "countryId": 45
+        },
+        {
+            "countryName": "Comoros",
+            "countryCode": "COM",
+            "dial": "+269",
+            "countryId": 46
+        },
+        {
+            "countryName": "Cook Islands",
+            "countryCode": "COK",
+            "dial": "+682",
+            "countryId": 47
+        },
+        {
+            "countryName": "Costa Rica",
+            "countryCode": "CRI",
+            "dial": "+506",
+            "countryId": 48
+        },
+        {
+            "countryName": "Côte dIvoire",
+            "countryCode": "CIV",
+            "dial": "+225",
+            "countryId": 49
+        },
+        {
+            "countryName": "Croatia",
+            "countryCode": "HRV",
+            "dial": "+385",
+            "countryId": 50
+        },
+        {
+            "countryName": "Cuba",
+            "countryCode": "CUB",
+            "dial": "+53",
+            "countryId": 51
+        },
+        {
+            "countryName": "Curaçao",
+            "countryCode": "CUW",
+            "dial": "+599",
+            "countryId": 52
+        },
+        {
+            "countryName": "Cyprus",
+            "countryCode": "CYP",
+            "dial": "+357",
+            "countryId": 53
+        },
+        {
+            "countryName": "Czechia",
+            "countryCode": "CZE",
+            "dial": "+420",
+            "countryId": 54
+        },
+        {
+            "countryName": "Denmark",
+            "countryCode": "DNK",
+            "dial": "+45",
+            "countryId": 55
+        },
+        {
+            "countryName": "Djibouti",
+            "countryCode": "DJI",
+            "dial": "+253",
+            "countryId": 56
+        },
+        {
+            "countryName": "Dominica",
+            "countryCode": "DMA",
+            "dial": "+1",
+            "countryId": 57
+        },
+        {
+            "countryName": "Dominican Republic",
+            "countryCode": "DOM",
+            "dial": "+1",
+            "countryId": 58
+        },
+        {
+            "countryName": "Ecuador",
+            "countryCode": "ECU",
+            "dial": "+593",
+            "countryId": 59
+        },
+        {
+            "countryName": "Egypt",
+            "countryCode": "EGY",
+            "dial": "+20",
+            "countryId": 60
+        },
+        {
+            "countryName": "El Salvador",
+            "countryCode": "SLV",
+            "dial": "+503",
+            "countryId": 61
+        },
+        {
+            "countryName": "Equatorial Guinea",
+            "countryCode": "GNQ",
+            "dial": "+240",
+            "countryId": 62
+        },
+        {
+            "countryName": "Eritrea",
+            "countryCode": "ERI",
+            "dial": "+291",
+            "countryId": 63
+        },
+        {
+            "countryName": "Estonia",
+            "countryCode": "EST",
+            "dial": "+372",
+            "countryId": 64
+        },
+        {
+            "countryName": "Ethiopia",
+            "countryCode": "ETH",
+            "dial": "+251",
+            "countryId": 65
+        },
+        {
+            "countryName": "Falkland Islands",
+            "countryCode": "FLK",
+            "dial": "+500",
+            "countryId": 66
+        },
+        {
+            "countryName": "Faroe Islands",
+            "countryCode": "FRO",
+            "dial": "+298",
+            "countryId": 67
+        },
+        {
+            "countryName": "Federated States of Micronesia",
+            "countryCode": "FSM",
+            "dial": "+691",
+            "countryId": 68
+        },
+        {
+            "countryName": "Fiji",
+            "countryCode": "FJI",
+            "dial": "+679",
+            "countryId": 69
+        },
+        {
+            "countryName": "Finland",
+            "countryCode": "FIN",
+            "dial": "+358",
+            "countryId": 70
+        },
+        {
+            "countryName": "France",
+            "countryCode": "FRA",
+            "dial": "+33",
+            "countryId": 71
+        },
+        {
+            "countryName": "French Guiana",
+            "countryCode": "GUF",
+            "dial": "+594",
+            "countryId": 72
+        },
+        {
+            "countryName": "French Polynesia",
+            "countryCode": "PYF",
+            "dial": "+689",
+            "countryId": 73
+        },
+        {
+            "countryName": "Gabon",
+            "countryCode": "GAB",
+            "dial": "+241",
+            "countryId": 74
+        },
+        {
+            "countryName": "Georgia",
+            "countryCode": "GEO",
+            "dial": "+995",
+            "countryId": 75
+        },
+        {
+            "countryName": "Germany",
+            "countryCode": "DEU",
+            "dial": "+49",
+            "countryId": 76
+        },
+        {
+            "countryName": "Ghana",
+            "countryCode": "GHA",
+            "dial": "+233",
+            "countryId": 77
+        },
+        {
+            "countryName": "Gibraltar",
+            "countryCode": "GIB",
+            "dial": "+350",
+            "countryId": 78
+        },
+        {
+            "countryName": "Greece",
+            "countryCode": "GRC",
+            "dial": "+30",
+            "countryId": 79
+        },
+        {
+            "countryName": "Greenland",
+            "countryCode": "GRL",
+            "dial": "+299",
+            "countryId": 80
+        },
+        {
+            "countryName": "Grenada",
+            "countryCode": "GRD",
+            "dial": "+1",
+            "countryId": 81
+        },
+        {
+            "countryName": "Guadeloupe",
+            "countryCode": "GLP",
+            "dial": "+590",
+            "countryId": 82
+        },
+        {
+            "countryName": "Guam",
+            "countryCode": "GUM",
+            "dial": "+1",
+            "countryId": 83
+        },
+        {
+            "countryName": "Guatemala",
+            "countryCode": "GTM",
+            "dial": "+502",
+            "countryId": 84
+        },
+        {
+            "countryName": "Guinea",
+            "countryCode": "GIN",
+            "dial": "+224",
+            "countryId": 85
+        },
+        {
+            "countryName": "Guinea-Bissau",
+            "countryCode": "GNB",
+            "dial": "+245",
+            "countryId": 86
+        },
+        {
+            "countryName": "Guyana",
+            "countryCode": "GUY",
+            "dial": "+592",
+            "countryId": 87
+        },
+        {
+            "countryName": "Haiti",
+            "countryCode": "HTI",
+            "dial": "+509",
+            "countryId": 88
+        },
+        {
+            "countryName": "Honduras",
+            "countryCode": "HND",
+            "dial": "+504",
+            "countryId": 89
+        },
+        {
+            "countryName": "Hong Kong",
+            "countryCode": "HKG",
+            "dial": "+852",
+            "countryId": 90
+        },
+        {
+            "countryName": "Hungary",
+            "countryCode": "HUN",
+            "dial": "+36",
+            "countryId": 91
+        },
+        {
+            "countryName": "Iceland",
+            "countryCode": "ISL",
+            "dial": "+354",
+            "countryId": 92
+        },
+        {
+            "countryName": "India",
+            "countryCode": "IND",
+            "dial": "+91",
+            "countryId": 93
+        },
+        {
+            "countryName": "Indonesia",
+            "countryCode": "IDN",
+            "dial": "+62",
+            "countryId": 94
+        },
+        {
+            "countryName": "Iran",
+            "countryCode": "IRN",
+            "dial": "+98",
+            "countryId": 95
+        },
+        {
+            "countryName": "Iraq",
+            "countryCode": "IRQ",
+            "dial": "+964",
+            "countryId": 96
+        },
+        {
+            "countryName": "Ireland",
+            "countryCode": "IRL",
+            "dial": "+353",
+            "countryId": 97
+        },
+        {
+            "countryName": "Israel",
+            "countryCode": "ISR",
+            "dial": "+972",
+            "countryId": 98
+        },
+        {
+            "countryName": "Italy",
+            "countryCode": "ITA",
+            "dial": "+39",
+            "countryId": 99
+        },
+        {
+            "countryName": "Jamaica",
+            "countryCode": "JAM",
+            "dial": "+1",
+            "countryId": 100
+        },
+        {
+            "countryName": "Japan",
+            "countryCode": "JPN",
+            "dial": "+81",
+            "countryId": 101
+        },
+        {
+            "countryName": "Jordan",
+            "countryCode": "JOR",
+            "dial": "+962",
+            "countryId": 102
+        },
+        {
+            "countryName": "Kazakhstan",
+            "countryCode": "KAZ",
+            "dial": "+7",
+            "countryId": 103
+        },
+        {
+            "countryName": "Kenya",
+            "countryCode": "KEN",
+            "dial": "+254",
+            "countryId": 104
+        },
+        {
+            "countryName": "Kiribati",
+            "countryCode": "KIR",
+            "dial": "+686",
+            "countryId": 105
+        },
+        {
+            "countryName": "Kuwait",
+            "countryCode": "KWT",
+            "dial": "+965",
+            "countryId": 106
+        },
+        {
+            "countryName": "Kyrgyzstan",
+            "countryCode": "KGZ",
+            "dial": "+996",
+            "countryId": 107
+        },
+        {
+            "countryName": "Laos",
+            "countryCode": "LAO",
+            "dial": "+856",
+            "countryId": 108
+        },
+        {
+            "countryName": "Latvia",
+            "countryCode": "LVA",
+            "dial": "+371",
+            "countryId": 109
+        },
+        {
+            "countryName": "Lebanon",
+            "countryCode": "LBN",
+            "dial": "+961",
+            "countryId": 110
+        },
+        {
+            "countryName": "Lesotho",
+            "countryCode": "LSO",
+            "dial": "+266",
+            "countryId": 111
+        },
+        {
+            "countryName": "Liberia",
+            "countryCode": "LBR",
+            "dial": "+231",
+            "countryId": 112
+        },
+        {
+            "countryName": "Libya",
+            "countryCode": "LBY",
+            "dial": "+218",
+            "countryId": 113
+        },
+        {
+            "countryName": "Liechtenstein",
+            "countryCode": "LIE",
+            "dial": "+423",
+            "countryId": 114
+        },
+        {
+            "countryName": "Lithuania",
+            "countryCode": "LTU",
+            "dial": "+370",
+            "countryId": 115
+        },
+        {
+            "countryName": "Luxembourg",
+            "countryCode": "LUX",
+            "dial": "+352",
+            "countryId": 116
+        },
+        {
+            "countryName": "Macao",
+            "countryCode": "MAC",
+            "dial": "+853",
+            "countryId": 117
+        },
+        {
+            "countryName": "Macedonia",
+            "countryCode": "MKD",
+            "dial": "+389",
+            "countryId": 118
+        },
+        {
+            "countryName": "Madagascar",
+            "countryCode": "MDG",
+            "dial": "+261",
+            "countryId": 119
+        },
+        {
+            "countryName": "Malawi",
+            "countryCode": "MWI",
+            "dial": "+265",
+            "countryId": 120
+        },
+        {
+            "countryName": "Malaysia",
+            "countryCode": "MYS",
+            "dial": "+60",
+            "countryId": 121
+        },
+        {
+            "countryName": "Maldives",
+            "countryCode": "MDV",
+            "dial": "+960",
+            "countryId": 122
+        },
+        {
+            "countryName": "Mali",
+            "countryCode": "MLI",
+            "dial": "+223",
+            "countryId": 123
+        },
+        {
+            "countryName": "Malta",
+            "countryCode": "MLT",
+            "dial": "+356",
+            "countryId": 124
+        },
+        {
+            "countryName": "Marshall Islands",
+            "countryCode": "MHL",
+            "dial": "+692",
+            "countryId": 125
+        },
+        {
+            "countryName": "Martinique",
+            "countryCode": "MTQ",
+            "dial": "+596",
+            "countryId": 126
+        },
+        {
+            "countryName": "Mauritania",
+            "countryCode": "MRT",
+            "dial": "+222",
+            "countryId": 127
+        },
+        {
+            "countryName": "Mauritius",
+            "countryCode": "MUS",
+            "dial": "+230",
+            "countryId": 128
+        },
+        {
+            "countryName": "Mayotte",
+            "countryCode": "MYT",
+            "dial": "+262",
+            "countryId": 129
+        },
+        {
+            "countryName": "Mexico",
+            "countryCode": "MEX",
+            "dial": "+52",
+            "countryId": 130
+        },
+        {
+            "countryName": "Moldova",
+            "countryCode": "MDA",
+            "dial": "+373",
+            "countryId": 131
+        },
+        {
+            "countryName": "Monaco",
+            "countryCode": "MCO",
+            "dial": "+377",
+            "countryId": 132
+        },
+        {
+            "countryName": "Mongolia",
+            "countryCode": "MNG",
+            "dial": "+976",
+            "countryId": 133
+        },
+        {
+            "countryName": "Montenegro",
+            "countryCode": "MNE",
+            "dial": "+382",
+            "countryId": 134
+        },
+        {
+            "countryName": "Montserrat",
+            "countryCode": "MSR",
+            "dial": "+1",
+            "countryId": 135
+        },
+        {
+            "countryName": "Morocco",
+            "countryCode": "MAR",
+            "dial": "+212",
+            "countryId": 136
+        },
+        {
+            "countryName": "Mozambique",
+            "countryCode": "MOZ",
+            "dial": "+258",
+            "countryId": 137
+        },
+        {
+            "countryName": "Namibia",
+            "countryCode": "NAM",
+            "dial": "+264",
+            "countryId": 138
+        },
+        {
+            "countryName": "Nauru",
+            "countryCode": "NRU",
+            "dial": "+674",
+            "countryId": 139
+        },
+        {
+            "countryName": "Nepal",
+            "countryCode": "NPL",
+            "dial": "+977",
+            "countryId": 140
+        },
+        {
+            "countryName": "Netherlands",
+            "countryCode": "NLD",
+            "dial": "+31",
+            "countryId": 141
+        },
+        {
+            "countryName": "Netherlands Antilles",
+            "countryCode": "ANT",
+            "dial": "+599",
+            "countryId": 142
+        },
+        {
+            "countryName": "New Caledonia",
+            "countryCode": "NCL",
+            "dial": "+687",
+            "countryId": 143
+        },
+        {
+            "countryName": "New Zealand",
+            "countryCode": "NZL",
+            "dial": "+64",
+            "countryId": 144
+        },
+        {
+            "countryName": "Nicaragua",
+            "countryCode": "NIC",
+            "dial": "+505",
+            "countryId": 145
+        },
+        {
+            "countryName": "Niger",
+            "countryCode": "NER",
+            "dial": "+227",
+            "countryId": 146
+        },
+        {
+            "countryName": "Nigeria",
+            "countryCode": "NGA",
+            "dial": "+234",
+            "countryId": 147
+        },
+        {
+            "countryName": "Niue",
+            "countryCode": "NIU",
+            "dial": "+683",
+            "countryId": 148
+        },
+        {
+            "countryName": "Norfolk Island",
+            "countryCode": "NFK",
+            "dial": "+672",
+            "countryId": 149
+        },
+        {
+            "countryName": "North Korea",
+            "countryCode": "PRK",
+            "dial": "+850",
+            "countryId": 150
+        },
+        {
+            "countryName": "Northern Mariana Islands",
+            "countryCode": "MNP",
+            "dial": "+1",
+            "countryId": 151
+        },
+        {
+            "countryName": "Norway",
+            "countryCode": "NOR",
+            "dial": "+47",
+            "countryId": 152
+        },
+        {
+            "countryName": "Oman",
+            "countryCode": "OMN",
+            "dial": "+968",
+            "countryId": 153
+        },
+        {
+            "countryName": "Pakistan",
+            "countryCode": "PAK",
+            "dial": "+92",
+            "countryId": 154
+        },
+        {
+            "countryName": "Palau",
+            "countryCode": "PLW",
+            "dial": "+680",
+            "countryId": 155
+        },
+        {
+            "countryName": "Palestine",
+            "countryCode": "PSE",
+            "dial": "+970",
+            "countryId": 156
+        },
+        {
+            "countryName": "Panama",
+            "countryCode": "PAN",
+            "dial": "+507",
+            "countryId": 157
+        },
+        {
+            "countryName": "Papua New Guinea",
+            "countryCode": "PNG",
+            "dial": "+675",
+            "countryId": 158
+        },
+        {
+            "countryName": "Paraguay",
+            "countryCode": "PRY",
+            "dial": "+595",
+            "countryId": 159
+        },
+        {
+            "countryName": "Peru",
+            "countryCode": "PER",
+            "dial": "+51",
+            "countryId": 160
+        },
+        {
+            "countryName": "Philippines",
+            "countryCode": "PHL",
+            "dial": "+63",
+            "countryId": 161
+        },
+        {
+            "countryName": "Poland",
+            "countryCode": "POL",
+            "dial": "+48",
+            "countryId": 162
+        },
+        {
+            "countryName": "Portugal",
+            "countryCode": "PRT",
+            "dial": "+351",
+            "countryId": 163
+        },
+        {
+            "countryName": "Puerto Rico",
+            "countryCode": "PRI",
+            "dial": "+1",
+            "countryId": 164
+        },
+        {
+            "countryName": "Qatar",
+            "countryCode": "QAT",
+            "dial": "+974",
+            "countryId": 165
+        },
+        {
+            "countryName": "Congo",
+            "countryCode": "COG",
+            "dial": "+242",
+            "countryId": 166
+        },
+        {
+            "countryName": "Réunion",
+            "countryCode": "REU",
+            "dial": "+262",
+            "countryId": 167
+        },
+        {
+            "countryName": "Romania",
+            "countryCode": "ROU",
+            "dial": "+40",
+            "countryId": 168
+        },
+        {
+            "countryName": "Russia",
+            "countryCode": "RUS",
+            "dial": "+7",
+            "countryId": 169
+        },
+        {
+            "countryName": "Rwanda",
+            "countryCode": "RWA",
+            "dial": "+250",
+            "countryId": 170
+        },
+        {
+            "countryName": "Saint Barthélemy",
+            "countryCode": "BLM",
+            "dial": "+590",
+            "countryId": 171
+        },
+        {
+            "countryName": "Saint Helena",
+            "countryCode": "SHN",
+            "dial": "+290",
+            "countryId": 172
+        },
+        {
+            "countryName": "Saint Kitts and Nevis",
+            "countryCode": "KNA",
+            "dial": "+1",
+            "countryId": 173
+        },
+        {
+            "countryName": "Saint Martin",
+            "countryCode": "MAF",
+            "dial": "+590",
+            "countryId": 174
+        },
+        {
+            "countryName": "Saint Pierre and Miquelon",
+            "countryCode": "SPM",
+            "dial": "+508",
+            "countryId": 175
+        },
+        {
+            "countryName": "Saint Vincent and the Grenadines",
+            "countryCode": "VCT",
+            "dial": "+1",
+            "countryId": 176
+        },
+        {
+            "countryName": "Samoa",
+            "countryCode": "WSM",
+            "dial": "+685",
+            "countryId": 177
+        },
+        {
+            "countryName": "San Marino",
+            "countryCode": "SMR",
+            "dial": "+378",
+            "countryId": 178
+        },
+        {
+            "countryName": "São Tomé and Príncipe",
+            "countryCode": "STP",
+            "dial": "+239",
+            "countryId": 179
+        },
+        {
+            "countryName": "Saudi Arabia",
+            "countryCode": "SAU",
+            "dial": "+966",
+            "countryId": 180
+        },
+        {
+            "countryName": "Senegal",
+            "countryCode": "SEN",
+            "dial": "+221",
+            "countryId": 181
+        },
+        {
+            "countryName": "Serbia",
+            "countryCode": "SRB",
+            "dial": "+381",
+            "countryId": 182
+        },
+        {
+            "countryName": "Seychelles",
+            "countryCode": "SYC",
+            "dial": "+248",
+            "countryId": 183
+        },
+        {
+            "countryName": "Sierra Leone",
+            "countryCode": "SLE",
+            "dial": "+232",
+            "countryId": 184
+        },
+        {
+            "countryName": "Singapore",
+            "countryCode": "SGP",
+            "dial": "+65",
+            "countryId": 185
+        },
+        {
+            "countryName": "Sint Maarten (Dutch part)",
+            "countryCode": "SXM",
+            "dial": "+1",
+            "countryId": 186
+        },
+        {
+            "countryName": "Slovakia",
+            "countryCode": "SVK",
+            "dial": "+421",
+            "countryId": 187
+        },
+        {
+            "countryName": "Slovenia",
+            "countryCode": "SVN",
+            "dial": "+386",
+            "countryId": 188
+        },
+        {
+            "countryName": "Solomon Islands",
+            "countryCode": "SLB",
+            "dial": "+677",
+            "countryId": 189
+        },
+        {
+            "countryName": "Somalia",
+            "countryCode": "SOM",
+            "dial": "+252",
+            "countryId": 190
+        },
+        {
+            "countryName": "South Africa",
+            "countryCode": "ZAF",
+            "dial": "+27",
+            "countryId": 191
+        },
+        {
+            "countryName": "South Korea",
+            "countryCode": "KOR",
+            "dial": "+82",
+            "countryId": 192
+        },
+        {
+            "countryName": "South Sudan",
+            "countryCode": "SSD",
+            "dial": "+211",
+            "countryId": 193
+        },
+        {
+            "countryName": "Spain",
+            "countryCode": "ESP",
+            "dial": "+34",
+            "countryId": 194
+        },
+        {
+            "countryName": "Sri Lanka",
+            "countryCode": "LKA",
+            "dial": "+94",
+            "countryId": 195
+        },
+        {
+            "countryName": "Saint Lucia",
+            "countryCode": "LCA",
+            "dial": "+1",
+            "countryId": 196
+        },
+        {
+            "countryName": "Sudan",
+            "countryCode": "SDN",
+            "dial": "+249",
+            "countryId": 197
+        },
+        {
+            "countryName": "Suriname",
+            "countryCode": "SUR",
+            "dial": "+597",
+            "countryId": 198
+        },
+        {
+            "countryName": "Swaziland",
+            "countryCode": "SWZ",
+            "dial": "+268",
+            "countryId": 199
+        },
+        {
+            "countryName": "Sweden",
+            "countryCode": "SWE",
+            "dial": "+46",
+            "countryId": 200
+        },
+        {
+            "countryName": "Switzerland",
+            "countryCode": "CHE",
+            "dial": "+41",
+            "countryId": 201
+        },
+        {
+            "countryName": "Syrian Arab Republic",
+            "countryCode": "SYR",
+            "dial": "+963",
+            "countryId": 202
+        },
+        {
+            "countryName": "Taiwan",
+            "countryCode": "TWN",
+            "dial": "+886",
+            "countryId": 203
+        },
+        {
+            "countryName": "Tajikistan",
+            "countryCode": "TJK",
+            "dial": "+992",
+            "countryId": 204
+        },
+        {
+            "countryName": "Tanzania",
+            "countryCode": "TZA",
+            "dial": "+255",
+            "countryId": 205
+        },
+        {
+            "countryName": "Thailand",
+            "countryCode": "THA",
+            "dial": "+66",
+            "countryId": 206
+        },
+        {
+            "countryName": "Bahamas",
+            "countryCode": "BHS",
+            "dial": "+1",
+            "countryId": 207
+        },
+        {
+            "countryName": "Gambia",
+            "countryCode": "GMB",
+            "dial": "+220",
+            "countryId": 208
+        },
+        {
+            "countryName": "Timor-Leste",
+            "countryCode": "TLS",
+            "dial": "+670",
+            "countryId": 209
+        },
+        {
+            "countryName": "Togo",
+            "countryCode": "TGO",
+            "dial": "+228",
+            "countryId": 210
+        },
+        {
+            "countryName": "Tokelau",
+            "countryCode": "TKL",
+            "dial": "+690",
+            "countryId": 211
+        },
+        {
+            "countryName": "Tonga",
+            "countryCode": "TON",
+            "dial": "+676",
+            "countryId": 212
+        },
+        {
+            "countryName": "Trinidad and Tobago",
+            "countryCode": "TTO",
+            "dial": "+1",
+            "countryId": 213
+        },
+        {
+            "countryName": "Tunisia",
+            "countryCode": "TUN",
+            "dial": "+216",
+            "countryId": 214
+        },
+        {
+            "countryName": "Turkey",
+            "countryCode": "TUR",
+            "dial": "+90",
+            "countryId": 215
+        },
+        {
+            "countryName": "Turkmenistan",
+            "countryCode": "TKM",
+            "dial": "+993",
+            "countryId": 216
+        },
+        {
+            "countryName": "Turks and Caicos Islands",
+            "countryCode": "TCA",
+            "dial": "+1",
+            "countryId": 217
+        },
+        {
+            "countryName": "Tuvalu",
+            "countryCode": "TUV",
+            "dial": "+688",
+            "countryId": 218
+        },
+        {
+            "countryName": "Uganda",
+            "countryCode": "UGA",
+            "dial": "+256",
+            "countryId": 219
+        },
+        {
+            "countryName": "Ukraine",
+            "countryCode": "UKR",
+            "dial": "+380",
+            "countryId": 220
+        },
+        {
+            "countryName": "United Arab Emirates",
+            "countryCode": "ARE",
+            "dial": "+971",
+            "countryId": 221
+        },
+        {
+            "countryName": "United Kingdom",
+            "countryCode": "GBR",
+            "dial": "+44",
+            "countryId": 222
+        },
+        {
+            "countryName": "United States",
+            "countryCode": "USA",
+            "dial": "+1",
+            "countryId": 223
+        },
+        {
+            "countryName": "Uruguay",
+            "countryCode": "URY",
+            "dial": "+598",
+            "countryId": 224
+        },
+        {
+            "countryName": "U.S. Virgin Islands",
+            "countryCode": "VIR",
+            "dial": "+1",
+            "countryId": 225
+        },
+        {
+            "countryName": "Uzbekistan",
+            "countryCode": "UZB",
+            "dial": "+998",
+            "countryId": 226
+        },
+        {
+            "countryName": "Vanuatu",
+            "countryCode": "VUT",
+            "dial": "+678",
+            "countryId": 227
+        },
+        {
+            "countryName": "Vatican City",
+            "countryCode": "VAT",
+            "dial": "+39",
+            "countryId": 228
+        },
+        {
+            "countryName": "Venezuela",
+            "countryCode": "VEN",
+            "dial": "+58",
+            "countryId": 229
+        },
+        {
+            "countryName": "Vietnam",
+            "countryCode": "VNM",
+            "dial": "+84",
+            "countryId": 230
+        },
+        {
+            "countryName": "Wallis and Futuna",
+            "countryCode": "WLF",
+            "dial": "+681",
+            "countryId": 231
+        },
+        {
+            "countryName": "Yemen",
+            "countryCode": "YEM",
+            "dial": "+967",
+            "countryId": 232
+        },
+        {
+            "countryName": "Zambia",
+            "countryCode": "ZMB",
+            "dial": "+260",
+            "countryId": 233
+        },
+        {
+            "countryName": "Zimbabwe",
+            "countryCode": "ZWE",
+            "dial": "+263",
+            "countryId": 234
+        }
+    ],
+    "users": [{
+            "userId": 1,
+            "firstName": "Super Admin",
+            "lastName": "TG",
+            "fullName": "Super Admin TG",
+            "userType": 1,
+            "branchId": 1,
+            "canHandleApplications": true
+        },
+        {
+            "userId": 2,
+            "firstName": "False Permissions",
+            "lastName": "TG",
+            "fullName": "False Permissions TG",
+            "userType": 1,
+            "branchId": 1,
+            "canHandleApplications": false
+        },
+        {
+            "userId": 3,
+            "firstName": "Style Remark",
+            "lastName": "TG",
+            "fullName": "Style Remark TG",
+            "userType": 1,
+            "branchId": 1,
+            "canHandleApplications": false
+        },
+        {
+            "userId": 4,
+            "firstName": "Reception User",
+            "lastName": "TG",
+            "fullName": "Reception User TG",
+            "userType": 1,
+            "branchId": 1,
+            "canHandleApplications": false
+        },
+        {
+            "userId": 5,
+            "firstName": "No permissions User",
+            "lastName": "TG",
+            "fullName": "No permissions User TG",
+            "userType": 7,
+            "branchId": 1,
+            "canHandleApplications": false
+        },
+        {
+            "userId": 6,
+            "firstName": "Priyank Rupareliya",
+            "lastName": "TG",
+            "fullName": "Priyank Rupareliya TG",
+            "userType": 1,
+            "branchId": 1,
+            "canHandleApplications": false
+        },
+        {
+            "userId": 7,
+            "firstName": "Tumin Sheth",
+            "lastName": "TG",
+            "fullName": "Tumin Sheth TG",
+            "userType": 1,
+            "branchId": 1,
+            "canHandleApplications": false
+        },
+        {
+            "userId": 8,
+            "firstName": "Ritwik Biswas",
+            "lastName": "TG",
+            "fullName": "Ritwik Biswas TG",
+            "userType": 1,
+            "branchId": 1,
+            "canHandleApplications": false
+        },
+        {
+            "userId": 9,
+            "firstName": "Tech Right Angle",
+            "lastName": "TG",
+            "fullName": "Tech Right Angle TG",
+            "userType": 1,
+            "branchId": 1,
+            "canHandleApplications": false
+        },
+        {
+            "userId": 10,
+            "firstName": "Surat User 1",
+            "lastName": "TG",
+            "fullName": "Surat User 1 TG",
+            "userType": 1,
+            "branchId": 1,
+            "canHandleApplications": false
+        },
+        {
+            "userId": 11,
+            "firstName": "Surat User 2",
+            "lastName": "TG",
+            "fullName": "Surat User 2 TG",
+            "userType": 1,
+            "branchId": 1,
+            "canHandleApplications": false
+        },
+        {
+            "userId": 12,
+            "firstName": "Surat Branch Admin",
+            "lastName": "TG",
+            "fullName": "Surat Branch Admin TG",
+            "userType": 1,
+            "branchId": 1,
+            "canHandleApplications": false
+        },
+        {
+            "userId": 13,
+            "firstName": "TG-APPLICATION",
+            "lastName": "TG",
+            "fullName": "TG-APPLICATION TG",
+            "userType": 1,
+            "branchId": 1,
+            "canHandleApplications": true
+        },
+        {
+            "userId": 14,
+            "firstName": "Admission Manager",
+            "lastName": "TG",
+            "fullName": "Admission Manager TG",
+            "userType": 9,
+            "branchId": 1,
+            "canHandleApplications": true
+        },
+        {
+            "userId": 15,
+            "firstName": "Admission Manager 2",
+            "lastName": "TG",
+            "fullName": "Admission Manager 2 TG",
+            "userType": 9,
+            "branchId": 1,
+            "canHandleApplications": true
+        },
+        {
+            "userId": 16,
+            "firstName": "Admission Manager 3",
+            "lastName": "TG",
+            "fullName": "Admission Manager 3 TG",
+            "userType": 9,
+            "branchId": 2,
+            "canHandleApplications": true
+        },
+        {
+            "userId": 17,
+            "firstName": "Branch Only Admsn ",
+            "lastName": "Admission Manager",
+            "fullName": "Branch Only Admsn  Admission Manager",
+            "userType": 9,
+            "branchId": 2,
+            "canHandleApplications": true
+        }
+    ],
+    "states": {
+        "count": 149,
+        "rows": [{
+                "stateId": 1,
+                "countryId": 38,
+                "stateName": "Alberta",
+                "stateCode": null
+            },
+            {
+                "stateId": 2,
+                "countryId": 38,
+                "stateName": "British Columbia",
+                "stateCode": null
+            },
+            {
+                "stateId": 3,
+                "countryId": 38,
+                "stateName": "Manitoba",
+                "stateCode": null
+            },
+            {
+                "stateId": 4,
+                "countryId": 38,
+                "stateName": "New Brunswick",
+                "stateCode": null
+            },
+            {
+                "stateId": 5,
+                "countryId": 38,
+                "stateName": "Newfoundland and Labrador",
+                "stateCode": null
+            },
+            {
+                "stateId": 6,
+                "countryId": 38,
+                "stateName": "Northwest Territories",
+                "stateCode": null
+            },
+            {
+                "stateId": 7,
+                "countryId": 38,
+                "stateName": "Nova Scotia",
+                "stateCode": null
+            },
+            {
+                "stateId": 8,
+                "countryId": 38,
+                "stateName": "Nunavut",
+                "stateCode": null
+            },
+            {
+                "stateId": 9,
+                "countryId": 38,
+                "stateName": "Ontario",
+                "stateCode": null
+            },
+            {
+                "stateId": 10,
+                "countryId": 38,
+                "stateName": "Prince Edward Island",
+                "stateCode": null
+            },
+            {
+                "stateId": 11,
+                "countryId": 38,
+                "stateName": "Quebec",
+                "stateCode": null
+            },
+            {
+                "stateId": 12,
+                "countryId": 38,
+                "stateName": "Saskatchewan",
+                "stateCode": null
+            },
+            {
+                "stateId": 13,
+                "countryId": 38,
+                "stateName": "Yukon Territory",
+                "stateCode": null
+            },
+            {
+                "stateId": 14,
+                "countryId": 93,
+                "stateName": "Andaman and Nicobar Islands",
+                "stateCode": null
+            },
+            {
+                "stateId": 15,
+                "countryId": 93,
+                "stateName": "Andhra Pradesh",
+                "stateCode": null
+            },
+            {
+                "stateId": 16,
+                "countryId": 93,
+                "stateName": "Arunachal Pradesh",
+                "stateCode": null
+            },
+            {
+                "stateId": 17,
+                "countryId": 93,
+                "stateName": "Assam",
+                "stateCode": null
+            },
+            {
+                "stateId": 18,
+                "countryId": 93,
+                "stateName": "Bihar",
+                "stateCode": null
+            },
+            {
+                "stateId": 19,
+                "countryId": 93,
+                "stateName": "Chandigarh",
+                "stateCode": null
+            },
+            {
+                "stateId": 20,
+                "countryId": 93,
+                "stateName": "Chhattisgarh",
+                "stateCode": null
+            },
+            {
+                "stateId": 21,
+                "countryId": 93,
+                "stateName": "Dadra and Nagar Haveli",
+                "stateCode": null
+            },
+            {
+                "stateId": 22,
+                "countryId": 93,
+                "stateName": "Daman and Diu",
+                "stateCode": null
+            },
+            {
+                "stateId": 23,
+                "countryId": 93,
+                "stateName": "Delhi",
+                "stateCode": null
+            },
+            {
+                "stateId": 24,
+                "countryId": 93,
+                "stateName": "Goa",
+                "stateCode": null
+            },
+            {
+                "stateId": 25,
+                "countryId": 93,
+                "stateName": "Gujarat",
+                "stateCode": null
+            },
+            {
+                "stateId": 26,
+                "countryId": 93,
+                "stateName": "Haryana",
+                "stateCode": null
+            },
+            {
+                "stateId": 27,
+                "countryId": 93,
+                "stateName": "Himachal Pradesh",
+                "stateCode": null
+            },
+            {
+                "stateId": 28,
+                "countryId": 93,
+                "stateName": "Jammu and Kashmir",
+                "stateCode": null
+            },
+            {
+                "stateId": 29,
+                "countryId": 93,
+                "stateName": "Jharkhand",
+                "stateCode": null
+            },
+            {
+                "stateId": 30,
+                "countryId": 93,
+                "stateName": "Karnataka",
+                "stateCode": null
+            },
+            {
+                "stateId": 31,
+                "countryId": 93,
+                "stateName": "Kerala",
+                "stateCode": null
+            },
+            {
+                "stateId": 32,
+                "countryId": 93,
+                "stateName": "Lakshadweep",
+                "stateCode": null
+            },
+            {
+                "stateId": 33,
+                "countryId": 93,
+                "stateName": "Madhya Pradesh",
+                "stateCode": null
+            },
+            {
+                "stateId": 34,
+                "countryId": 93,
+                "stateName": "Maharashtra",
+                "stateCode": null
+            },
+            {
+                "stateId": 35,
+                "countryId": 93,
+                "stateName": "Manipur",
+                "stateCode": null
+            },
+            {
+                "stateId": 36,
+                "countryId": 93,
+                "stateName": "Meghalaya",
+                "stateCode": null
+            },
+            {
+                "stateId": 37,
+                "countryId": 93,
+                "stateName": "Mizoram",
+                "stateCode": null
+            },
+            {
+                "stateId": 38,
+                "countryId": 93,
+                "stateName": "Nagaland",
+                "stateCode": null
+            },
+            {
+                "stateId": 39,
+                "countryId": 93,
+                "stateName": "Orissa",
+                "stateCode": null
+            },
+            {
+                "stateId": 40,
+                "countryId": 93,
+                "stateName": "Pondicherry",
+                "stateCode": null
+            },
+            {
+                "stateId": 41,
+                "countryId": 93,
+                "stateName": "Punjab",
+                "stateCode": null
+            },
+            {
+                "stateId": 42,
+                "countryId": 93,
+                "stateName": "Rajasthan",
+                "stateCode": null
+            },
+            {
+                "stateId": 43,
+                "countryId": 93,
+                "stateName": "Sikkim",
+                "stateCode": null
+            },
+            {
+                "stateId": 44,
+                "countryId": 93,
+                "stateName": "Tamil Nadu",
+                "stateCode": null
+            },
+            {
+                "stateId": 45,
+                "countryId": 93,
+                "stateName": "Tripura",
+                "stateCode": null
+            },
+            {
+                "stateId": 46,
+                "countryId": 93,
+                "stateName": "Uttaranchal",
+                "stateCode": null
+            },
+            {
+                "stateId": 47,
+                "countryId": 93,
+                "stateName": "Uttar Pradesh",
+                "stateCode": null
+            },
+            {
+                "stateId": 48,
+                "countryId": 93,
+                "stateName": "West Bengal",
+                "stateCode": null
+            },
+            {
+                "stateId": 49,
+                "countryId": 97,
+                "stateName": "Carlow",
+                "stateCode": null
+            },
+            {
+                "stateId": 50,
+                "countryId": 97,
+                "stateName": "Cavan",
+                "stateCode": null
+            },
+            {
+                "stateId": 51,
+                "countryId": 97,
+                "stateName": "Clare",
+                "stateCode": null
+            },
+            {
+                "stateId": 52,
+                "countryId": 97,
+                "stateName": "Cork",
+                "stateCode": null
+            },
+            {
+                "stateId": 53,
+                "countryId": 97,
+                "stateName": "Donegal",
+                "stateCode": null
+            },
+            {
+                "stateId": 54,
+                "countryId": 97,
+                "stateName": "Dublin",
+                "stateCode": null
+            },
+            {
+                "stateId": 55,
+                "countryId": 97,
+                "stateName": "Galway",
+                "stateCode": null
+            },
+            {
+                "stateId": 56,
+                "countryId": 97,
+                "stateName": "Kerry",
+                "stateCode": null
+            },
+            {
+                "stateId": 57,
+                "countryId": 97,
+                "stateName": "Kildare",
+                "stateCode": null
+            },
+            {
+                "stateId": 58,
+                "countryId": 97,
+                "stateName": "Kilkenny",
+                "stateCode": null
+            },
+            {
+                "stateId": 59,
+                "countryId": 97,
+                "stateName": "Laois",
+                "stateCode": null
+            },
+            {
+                "stateId": 60,
+                "countryId": 97,
+                "stateName": "Leitrim",
+                "stateCode": null
+            },
+            {
+                "stateId": 61,
+                "countryId": 97,
+                "stateName": "Limerick",
+                "stateCode": null
+            },
+            {
+                "stateId": 62,
+                "countryId": 97,
+                "stateName": "Longford",
+                "stateCode": null
+            },
+            {
+                "stateId": 63,
+                "countryId": 97,
+                "stateName": "Louth",
+                "stateCode": null
+            },
+            {
+                "stateId": 64,
+                "countryId": 97,
+                "stateName": "Mayo",
+                "stateCode": null
+            },
+            {
+                "stateId": 65,
+                "countryId": 97,
+                "stateName": "Meath",
+                "stateCode": null
+            },
+            {
+                "stateId": 66,
+                "countryId": 97,
+                "stateName": "Monaghan",
+                "stateCode": null
+            },
+            {
+                "stateId": 67,
+                "countryId": 97,
+                "stateName": "Offaly",
+                "stateCode": null
+            },
+            {
+                "stateId": 68,
+                "countryId": 97,
+                "stateName": "Roscommon",
+                "stateCode": null
+            },
+            {
+                "stateId": 69,
+                "countryId": 97,
+                "stateName": "Sligo",
+                "stateCode": null
+            },
+            {
+                "stateId": 70,
+                "countryId": 97,
+                "stateName": "Tipperary",
+                "stateCode": null
+            },
+            {
+                "stateId": 71,
+                "countryId": 97,
+                "stateName": "Waterford",
+                "stateCode": null
+            },
+            {
+                "stateId": 72,
+                "countryId": 97,
+                "stateName": "Westmeath",
+                "stateCode": null
+            },
+            {
+                "stateId": 73,
+                "countryId": 97,
+                "stateName": "Wexford",
+                "stateCode": null
+            },
+            {
+                "stateId": 74,
+                "countryId": 97,
+                "stateName": "Wicklow",
+                "stateCode": null
+            },
+            {
+                "stateId": 75,
+                "countryId": 144,
+                "stateName": "Auckland",
+                "stateCode": null
+            },
+            {
+                "stateId": 76,
+                "countryId": 144,
+                "stateName": "Bay of Plenty",
+                "stateCode": null
+            },
+            {
+                "stateId": 77,
+                "countryId": 144,
+                "stateName": "Canterbury",
+                "stateCode": null
+            },
+            {
+                "stateId": 78,
+                "countryId": 144,
+                "stateName": "Chatham Islands",
+                "stateCode": null
+            },
+            {
+                "stateId": 79,
+                "countryId": 144,
+                "stateName": "Gisborne",
+                "stateCode": null
+            },
+            {
+                "stateId": 80,
+                "countryId": 144,
+                "stateName": "Hawke's Bay",
+                "stateCode": null
+            },
+            {
+                "stateId": 81,
+                "countryId": 144,
+                "stateName": "Manawatu-Wanganui",
+                "stateCode": null
+            },
+            {
+                "stateId": 82,
+                "countryId": 144,
+                "stateName": "Marlborough",
+                "stateCode": null
+            },
+            {
+                "stateId": 83,
+                "countryId": 144,
+                "stateName": "Nelson",
+                "stateCode": null
+            },
+            {
+                "stateId": 84,
+                "countryId": 144,
+                "stateName": "Northland",
+                "stateCode": null
+            },
+            {
+                "stateId": 85,
+                "countryId": 144,
+                "stateName": "Otago",
+                "stateCode": null
+            },
+            {
+                "stateId": 86,
+                "countryId": 144,
+                "stateName": "Southland",
+                "stateCode": null
+            },
+            {
+                "stateId": 87,
+                "countryId": 144,
+                "stateName": "Taranaki",
+                "stateCode": null
+            },
+            {
+                "stateId": 88,
+                "countryId": 144,
+                "stateName": "Tasman",
+                "stateCode": null
+            },
+            {
+                "stateId": 89,
+                "countryId": 144,
+                "stateName": "Waikato",
+                "stateCode": null
+            },
+            {
+                "stateId": 90,
+                "countryId": 144,
+                "stateName": "Wellington",
+                "stateCode": null
+            },
+            {
+                "stateId": 91,
+                "countryId": 144,
+                "stateName": "West Coast",
+                "stateCode": null
+            },
+            {
+                "stateId": 92,
+                "countryId": 221,
+                "stateName": "Abu Dhabi",
+                "stateCode": null
+            },
+            {
+                "stateId": 93,
+                "countryId": 221,
+                "stateName": "'Ajman",
+                "stateCode": null
+            },
+            {
+                "stateId": 94,
+                "countryId": 221,
+                "stateName": "Al Fujayrah",
+                "stateCode": null
+            },
+            {
+                "stateId": 95,
+                "countryId": 221,
+                "stateName": "Sharjah",
+                "stateCode": null
+            },
+            {
+                "stateId": 96,
+                "countryId": 221,
+                "stateName": "Dubai",
+                "stateCode": null
+            },
+            {
+                "stateId": 97,
+                "countryId": 221,
+                "stateName": "Ra's al Khaymah",
+                "stateCode": null
+            },
+            {
+                "stateId": 98,
+                "countryId": 221,
+                "stateName": "Umm al Qaywayn",
+                "stateCode": null
+            },
+            {
+                "stateId": 99,
+                "countryId": 223,
+                "stateName": "Alabama",
+                "stateCode": null
+            },
+            {
+                "stateId": 100,
+                "countryId": 223,
+                "stateName": "Alaska",
+                "stateCode": null
+            },
+            {
+                "stateId": 101,
+                "countryId": 223,
+                "stateName": "Arizona",
+                "stateCode": null
+            },
+            {
+                "stateId": 102,
+                "countryId": 223,
+                "stateName": "Arkansas",
+                "stateCode": null
+            },
+            {
+                "stateId": 103,
+                "countryId": 223,
+                "stateName": "California",
+                "stateCode": null
+            },
+            {
+                "stateId": 104,
+                "countryId": 223,
+                "stateName": "Colorado",
+                "stateCode": null
+            },
+            {
+                "stateId": 105,
+                "countryId": 223,
+                "stateName": "Connecticut",
+                "stateCode": null
+            },
+            {
+                "stateId": 106,
+                "countryId": 223,
+                "stateName": "Delaware",
+                "stateCode": null
+            },
+            {
+                "stateId": 107,
+                "countryId": 223,
+                "stateName": "District of Columbia",
+                "stateCode": null
+            },
+            {
+                "stateId": 108,
+                "countryId": 223,
+                "stateName": "Florida",
+                "stateCode": null
+            },
+            {
+                "stateId": 109,
+                "countryId": 223,
+                "stateName": "Georgia",
+                "stateCode": null
+            },
+            {
+                "stateId": 110,
+                "countryId": 223,
+                "stateName": "Hawaii",
+                "stateCode": null
+            },
+            {
+                "stateId": 111,
+                "countryId": 223,
+                "stateName": "Idaho",
+                "stateCode": null
+            },
+            {
+                "stateId": 112,
+                "countryId": 223,
+                "stateName": "Illinois",
+                "stateCode": null
+            },
+            {
+                "stateId": 113,
+                "countryId": 223,
+                "stateName": "Indiana",
+                "stateCode": null
+            },
+            {
+                "stateId": 114,
+                "countryId": 223,
+                "stateName": "Iowa",
+                "stateCode": null
+            },
+            {
+                "stateId": 115,
+                "countryId": 223,
+                "stateName": "Kansas",
+                "stateCode": null
+            },
+            {
+                "stateId": 116,
+                "countryId": 223,
+                "stateName": "Kentucky",
+                "stateCode": null
+            },
+            {
+                "stateId": 117,
+                "countryId": 223,
+                "stateName": "Louisiana",
+                "stateCode": null
+            },
+            {
+                "stateId": 118,
+                "countryId": 223,
+                "stateName": "Maine",
+                "stateCode": null
+            },
+            {
+                "stateId": 119,
+                "countryId": 223,
+                "stateName": "Maryland",
+                "stateCode": null
+            },
+            {
+                "stateId": 120,
+                "countryId": 223,
+                "stateName": "Massachusetts",
+                "stateCode": null
+            },
+            {
+                "stateId": 121,
+                "countryId": 223,
+                "stateName": "Michigan",
+                "stateCode": null
+            },
+            {
+                "stateId": 122,
+                "countryId": 223,
+                "stateName": "Minnesota",
+                "stateCode": null
+            },
+            {
+                "stateId": 123,
+                "countryId": 223,
+                "stateName": "Mississippi",
+                "stateCode": null
+            },
+            {
+                "stateId": 124,
+                "countryId": 223,
+                "stateName": "Missouri",
+                "stateCode": null
+            },
+            {
+                "stateId": 125,
+                "countryId": 223,
+                "stateName": "Montana",
+                "stateCode": null
+            },
+            {
+                "stateId": 126,
+                "countryId": 223,
+                "stateName": "Nebraska",
+                "stateCode": null
+            },
+            {
+                "stateId": 127,
+                "countryId": 223,
+                "stateName": "Nevada",
+                "stateCode": null
+            },
+            {
+                "stateId": 128,
+                "countryId": 223,
+                "stateName": "New Hampshire",
+                "stateCode": null
+            },
+            {
+                "stateId": 129,
+                "countryId": 223,
+                "stateName": "New Jersey",
+                "stateCode": null
+            },
+            {
+                "stateId": 130,
+                "countryId": 223,
+                "stateName": "New Mexico",
+                "stateCode": null
+            },
+            {
+                "stateId": 131,
+                "countryId": 223,
+                "stateName": "New York",
+                "stateCode": null
+            },
+            {
+                "stateId": 132,
+                "countryId": 223,
+                "stateName": "North Carolina",
+                "stateCode": null
+            },
+            {
+                "stateId": 133,
+                "countryId": 223,
+                "stateName": "North Dakota",
+                "stateCode": null
+            },
+            {
+                "stateId": 134,
+                "countryId": 223,
+                "stateName": "Ohio",
+                "stateCode": null
+            },
+            {
+                "stateId": 135,
+                "countryId": 223,
+                "stateName": "Oklahoma",
+                "stateCode": null
+            },
+            {
+                "stateId": 136,
+                "countryId": 223,
+                "stateName": "Oregon",
+                "stateCode": null
+            },
+            {
+                "stateId": 137,
+                "countryId": 223,
+                "stateName": "Pennsylvania",
+                "stateCode": null
+            },
+            {
+                "stateId": 138,
+                "countryId": 223,
+                "stateName": "Rhode Island",
+                "stateCode": null
+            },
+            {
+                "stateId": 139,
+                "countryId": 223,
+                "stateName": "South Carolina",
+                "stateCode": null
+            },
+            {
+                "stateId": 140,
+                "countryId": 223,
+                "stateName": "South Dakota",
+                "stateCode": null
+            },
+            {
+                "stateId": 141,
+                "countryId": 223,
+                "stateName": "Tennessee",
+                "stateCode": null
+            },
+            {
+                "stateId": 142,
+                "countryId": 223,
+                "stateName": "Texas",
+                "stateCode": null
+            },
+            {
+                "stateId": 143,
+                "countryId": 223,
+                "stateName": "Utah",
+                "stateCode": null
+            },
+            {
+                "stateId": 144,
+                "countryId": 223,
+                "stateName": "Vermont",
+                "stateCode": null
+            },
+            {
+                "stateId": 145,
+                "countryId": 223,
+                "stateName": "Virginia",
+                "stateCode": null
+            },
+            {
+                "stateId": 146,
+                "countryId": 223,
+                "stateName": "Washington",
+                "stateCode": null
+            },
+            {
+                "stateId": 147,
+                "countryId": 223,
+                "stateName": "West Virginia",
+                "stateCode": null
+            },
+            {
+                "stateId": 148,
+                "countryId": 223,
+                "stateName": "Wisconsin",
+                "stateCode": null
+            },
+            {
+                "stateId": 149,
+                "countryId": 223,
+                "stateName": "Wyoming",
+                "stateCode": null
+            }
+        ]
+    },
+    "scheduleTypes": {
+        "count": 4,
+        "rows": [{
+                "scheduleTypeId": 1,
+                "scheduleTypeName": "Virtual Counselling",
+                "typeCode": "VC"
+            },
+            {
+                "scheduleTypeId": 2,
+                "scheduleTypeName": "Task",
+                "typeCode": "T"
+            },
+            {
+                "scheduleTypeId": 3,
+                "scheduleTypeName": "Follow Up",
+                "typeCode": "F"
+            },
+            {
+                "scheduleTypeId": 4,
+                "scheduleTypeName": "Direct Counselling",
+                "typeCode": "DC"
+            }
+        ]
+    },
+    "leadDocTypes": {
+        "count": 13,
+        "rows": [{
+                "docTypeId": 1,
+                "docTypeName": "10th Standard",
+                "academicTypeValue": 3
+            },
+            {
+                "docTypeId": 2,
+                "docTypeName": "12th Standard",
+                "academicTypeValue": 4
+            },
+            {
+                "docTypeId": 3,
+                "docTypeName": "Grad/PostGrad",
+                "academicTypeValue": 5
+            },
+            {
+                "docTypeId": 4,
+                "docTypeName": "Adhar Card",
+                "academicTypeValue": null
+            },
+            {
+                "docTypeId": 5,
+                "docTypeName": "IELTS",
+                "academicTypeValue": 1
+            },
+            {
+                "docTypeId": 6,
+                "docTypeName": "GMAT",
+                "academicTypeValue": 2
+            },
+            {
+                "docTypeId": 7,
+                "docTypeName": "PTE",
+                "academicTypeValue": 8
+            },
+            {
+                "docTypeId": 8,
+                "docTypeName": "GRE",
+                "academicTypeValue": 9
+            },
+            {
+                "docTypeId": 9,
+                "docTypeName": "SAT",
+                "academicTypeValue": 10
+            },
+            {
+                "docTypeId": 10,
+                "docTypeName": "TOEFL",
+                "academicTypeValue": 11
+            },
+            {
+                "docTypeId": 11,
+                "docTypeName": "Other Identity Docs",
+                "academicTypeValue": null
+            },
+            {
+                "docTypeId": 12,
+                "docTypeName": "Other Certifications",
+                "academicTypeValue": null
+            },
+            {
+                "docTypeId": 13,
+                "docTypeName": "Passport",
+                "academicTypeValue": null
+            }
+        ]
+    },
+    "actionTypes": {
+        "count": 15,
+        "rows": [{
+                "actionTypeId": 1,
+                "actionTypeName": "Lead Created",
+                "typeCode": "LC",
+                "createdAt": "2021-08-02T05:39:20.000Z",
+                "updatedAt": "2021-08-02T05:39:20.000Z"
+            },
+            {
+                "actionTypeId": 2,
+                "actionTypeName": "Lead Updated",
+                "typeCode": "LU",
+                "createdAt": "2021-08-02T05:39:20.000Z",
+                "updatedAt": "2021-08-02T05:39:20.000Z"
+            },
+            {
+                "actionTypeId": 3,
+                "actionTypeName": "Sent Email",
+                "typeCode": "ES",
+                "createdAt": "2021-08-02T05:39:20.000Z",
+                "updatedAt": "2021-08-02T05:39:20.000Z"
+            },
+            {
+                "actionTypeId": 4,
+                "actionTypeName": "Counselling Session Created",
+                "typeCode": "CC",
+                "createdAt": "2021-08-02T05:39:20.000Z",
+                "updatedAt": "2021-08-02T05:39:20.000Z"
+            },
+            {
+                "actionTypeId": 5,
+                "actionTypeName": "Counselling Session Started",
+                "typeCode": "CS",
+                "createdAt": "2021-08-02T05:39:20.000Z",
+                "updatedAt": "2021-08-02T05:39:20.000Z"
+            },
+            {
+                "actionTypeId": 6,
+                "actionTypeName": "Counselling Session Ended",
+                "typeCode": "CE",
+                "createdAt": "2021-08-02T05:39:20.000Z",
+                "updatedAt": "2021-08-02T05:39:20.000Z"
+            },
+            {
+                "actionTypeId": 7,
+                "actionTypeName": "Application Created",
+                "typeCode": "AC",
+                "createdAt": "2021-08-02T05:39:20.000Z",
+                "updatedAt": "2021-08-02T05:39:20.000Z"
+            },
+            {
+                "actionTypeId": 8,
+                "actionTypeName": "Application Updated",
+                "typeCode": "AU",
+                "createdAt": "2021-08-02T05:39:20.000Z",
+                "updatedAt": "2021-08-02T05:39:20.000Z"
+            },
+            {
+                "actionTypeId": 9,
+                "actionTypeName": "Application Deleted",
+                "typeCode": "AD",
+                "createdAt": "2021-08-02T05:39:20.000Z",
+                "updatedAt": "2021-08-02T05:39:20.000Z"
+            },
+            {
+                "actionTypeId": 10,
+                "actionTypeName": "User Logged In",
+                "typeCode": "LI",
+                "createdAt": "2021-08-02T05:39:20.000Z",
+                "updatedAt": "2021-08-02T05:39:20.000Z"
+            },
+            {
+                "actionTypeId": 11,
+                "actionTypeName": "User Logged Out",
+                "typeCode": "LO",
+                "createdAt": "2021-08-02T05:39:20.000Z",
+                "updatedAt": "2021-08-02T05:39:20.000Z"
+            },
+            {
+                "actionTypeId": 12,
+                "actionTypeName": "Application Handler Updated",
+                "typeCode": "HU",
+                "createdAt": "2021-08-02T05:39:20.000Z",
+                "updatedAt": "2021-08-02T05:39:20.000Z"
+            },
+            {
+                "actionTypeId": 13,
+                "actionTypeName": "Transaction Created",
+                "typeCode": "TC",
+                "createdAt": "2021-08-02T05:39:20.000Z",
+                "updatedAt": "2021-08-02T05:39:20.000Z"
+            },
+            {
+                "actionTypeId": 14,
+                "actionTypeName": "Lead To Prospect",
+                "typeCode": "L2P",
+                "createdAt": "2021-08-02T05:39:20.000Z",
+                "updatedAt": "2021-08-02T05:39:20.000Z"
+            },
+            {
+                "actionTypeId": 15,
+                "actionTypeName": "Updated Lead Owner",
+                "typeCode": "ULO",
+                "createdAt": "2021-08-02T05:39:20.000Z",
+                "updatedAt": "2021-08-02T05:39:20.000Z"
+            }
+        ]
+    },
+    "applicationStatuses": {
+        "count": 10,
+        "rows": [{
+                "uniAppStatusId": 1,
+                "uniAppStatusName": "Notified Processing Dept.",
+                "createdAt": "2021-08-02T05:39:26.000Z",
+                "updatedAt": "2021-08-02T05:39:26.000Z"
+            },
+            {
+                "uniAppStatusId": 2,
+                "uniAppStatusName": "Processing",
+                "createdAt": "2021-08-02T05:39:26.000Z",
+                "updatedAt": "2021-08-02T05:39:26.000Z"
+            },
+            {
+                "uniAppStatusId": 3,
+                "uniAppStatusName": "Awaiting Student Update",
+                "createdAt": "2021-08-02T05:39:26.000Z",
+                "updatedAt": "2021-08-02T05:39:26.000Z"
+            },
+            {
+                "uniAppStatusId": 5,
+                "uniAppStatusName": "Awaiting Counsellor Update",
+                "createdAt": "2021-08-02T05:39:26.000Z",
+                "updatedAt": "2021-08-02T05:39:26.000Z"
+            },
+            {
+                "uniAppStatusId": 6,
+                "uniAppStatusName": "Awaiting University Update",
+                "createdAt": "2021-08-02T05:39:26.000Z",
+                "updatedAt": "2021-08-02T05:39:26.000Z"
+            },
+            {
+                "uniAppStatusId": 7,
+                "uniAppStatusName": "Application Sent to University",
+                "createdAt": "2021-08-02T05:39:26.000Z",
+                "updatedAt": "2021-08-02T05:39:26.000Z"
+            },
+            {
+                "uniAppStatusId": 8,
+                "uniAppStatusName": "Rejected",
+                "createdAt": "2021-08-02T05:39:27.000Z",
+                "updatedAt": "2021-08-02T05:39:27.000Z"
+            },
+            {
+                "uniAppStatusId": 9,
+                "uniAppStatusName": "Approved",
+                "createdAt": "2021-08-02T05:39:27.000Z",
+                "updatedAt": "2021-08-02T05:39:27.000Z"
+            },
+            {
+                "uniAppStatusId": 10,
+                "uniAppStatusName": "Approved on Condition",
+                "createdAt": "2021-08-02T05:39:27.000Z",
+                "updatedAt": "2021-08-02T05:39:27.000Z"
+            },
+            {
+                "uniAppStatusId": 11,
+                "uniAppStatusName": "Closed",
+                "createdAt": "2021-08-02T05:39:27.000Z",
+                "updatedAt": "2021-08-02T05:39:27.000Z"
+            }
+        ]
+    },
+    "universities": {
+        "count": 100,
+        "rows": [{
+                "uniEmail": "magnus_abbott@gmail.com",
+                "uniId": 1,
+                "uniUUID": "41db1988-c201-4dcc-a873-4bb569b7f27a",
+                "name": "Lehner and Sons",
+                "childOf": null,
+                "campusOf": null,
+                "city": "b",
+                "stateId": 149,
+                "overview": "Ullam perspiciatis minima veritatis neque. Laboriosam enim soluta modi. Quia eveniet placeat sed vel ea et nobis.\n \rQuod laborum qui impedit dolores rerum excepturi ducimus possimus beatae. Ut quod tenetur iure blanditiis nihil. Quae alias sapiente excepturi ut ex tempora. Amet quasi et. Et consequatur reprehenderit totam ea iusto error.",
+                "globalRank": 120,
+                "ieltsAccepted": false,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:11.000Z",
+                "updatedAt": "2021-07-26T12:48:11.000Z"
+            },
+            {
+                "uniEmail": "ova80@gmail.com",
+                "uniId": 2,
+                "uniUUID": "05b1bb36-8042-4d6f-9856-1fc31687e138",
+                "name": "Osinski, Yost and Rodriguez",
+                "childOf": null,
+                "campusOf": null,
+                "city": "v",
+                "stateId": 113,
+                "overview": "Consequatur molestiae et quasi hic harum. Sint ea autem repellat doloremque omnis. Voluptas nihil sunt quae eligendi. Rem nemo dolorum quo quam quis blanditiis aliquid eos quia. Maiores et consequatur dolor.\n \rBlanditiis ut aliquam qui est quasi alias. Dolor at sit incidunt et numquam quo aliquid consectetur. Ut ad illo molestiae voluptates sapiente.",
+                "globalRank": 64,
+                "ieltsAccepted": true,
+                "countryId": 221,
+                "createdAt": "2021-07-26T12:48:11.000Z",
+                "updatedAt": "2021-07-26T12:48:11.000Z"
+            },
+            {
+                "uniEmail": "darrion11@hotmail.com",
+                "uniId": 3,
+                "uniUUID": "1eb089a4-5f8f-41d4-9186-7a96bf12aa9a",
+                "name": "Windler and Sons",
+                "childOf": null,
+                "campusOf": null,
+                "city": "v",
+                "stateId": 47,
+                "overview": "Quam quo nisi incidunt occaecati. Odio dolore nam nihil minima modi eligendi quaerat odit molestias. Aspernatur sed officiis nesciunt veniam quidem aspernatur animi et fugiat. Tempora vel odio dignissimos maiores possimus vel provident.\n \rSed non nemo qui expedita incidunt illo unde vel doloremque. Ut nesciunt inventore quis voluptas velit repudiandae modi molestiae adipisci. Nisi cumque ut dolorem consequatur adipisci vel recusandae quia. A nihil et dolores quas non est iusto.",
+                "globalRank": 25,
+                "ieltsAccepted": true,
+                "countryId": 221,
+                "createdAt": "2021-07-26T12:48:11.000Z",
+                "updatedAt": "2021-07-26T12:48:11.000Z"
+            },
+            {
+                "uniEmail": "russel_larson19@gmail.com",
+                "uniId": 4,
+                "uniUUID": "a1b78c35-c812-4bf5-82cc-91c8a56f17b3",
+                "name": "Schamberger - Krajcik",
+                "childOf": null,
+                "campusOf": null,
+                "city": "d",
+                "stateId": 23,
+                "overview": "Tempora minus asperiores quia dolores. Assumenda qui voluptas earum. Ipsum nihil dolor natus molestias aspernatur quia assumenda. Quidem veritatis sequi cumque provident perferendis vel. Et natus quae sit ut vel consequatur. Eum quam dolorum delectus.\n \rQuos voluptas aut ipsa qui id natus voluptatem dolore consequatur. Error illum odio. Nesciunt voluptas libero totam blanditiis amet rerum aut provident esse. Aut possimus sed doloremque aut et quos occaecati qui pariatur.",
+                "globalRank": 75,
+                "ieltsAccepted": true,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:11.000Z",
+                "updatedAt": "2021-07-26T12:48:11.000Z"
+            },
+            {
+                "uniEmail": "victoria.wiza@hotmail.com",
+                "uniId": 5,
+                "uniUUID": "1511a54a-e4e2-49cd-acf3-979fcededd61",
+                "name": "O'Hara, Kovacek and Stokes",
+                "childOf": null,
+                "campusOf": null,
+                "city": "b",
+                "stateId": 23,
+                "overview": "Est voluptatum ex voluptatem reprehenderit beatae dolores at. Optio ut harum ducimus eum. Ad iure exercitationem libero quisquam earum reiciendis tempore placeat qui. Nihil a maiores et molestiae.\n \rEa est similique ipsum laudantium maxime est placeat nesciunt quia. Iste aut quo nihil esse. Dignissimos facilis facilis et ad quo voluptatum quam voluptas tenetur. Sint quas accusantium est quo voluptatem cupiditate nihil suscipit molestiae. Dolore dolorem dicta vel et iste minima in asperiores cum.",
+                "globalRank": 79,
+                "ieltsAccepted": true,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:11.000Z",
+                "updatedAt": "2021-07-26T12:48:11.000Z"
+            },
+            {
+                "uniEmail": "marguerite1@gmail.com",
+                "uniId": 6,
+                "uniUUID": "6a651c1e-67d6-42e0-ac05-afd6f6d90638",
+                "name": "Yost, Christiansen and Collins",
+                "childOf": null,
+                "campusOf": null,
+                "city": "v",
+                "stateId": 69,
+                "overview": "Tenetur sunt recusandae quia ut commodi quia nostrum sunt. Reprehenderit sunt officiis ea eos autem. Possimus dicta et.\n \rSint accusantium dolore consequuntur accusantium quia. Voluptatum qui commodi. Sint autem voluptatem consequatur consequuntur dolores autem perferendis sit consequatur. Sit et quia in dolorem voluptates. Voluptas aut expedita nam. Sit doloribus ad ipsa.",
+                "globalRank": 125,
+                "ieltsAccepted": true,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:11.000Z",
+                "updatedAt": "2021-07-26T12:48:11.000Z"
+            },
+            {
+                "uniEmail": "deion_funk@hotmail.com",
+                "uniId": 7,
+                "uniUUID": "46f9d53e-6e21-4515-9158-34ffdcb33a81",
+                "name": "Schuppe, Gusikowski and Stamm",
+                "childOf": null,
+                "campusOf": null,
+                "city": "o",
+                "stateId": 44,
+                "overview": "Dicta aut facere error illum. Placeat similique in et asperiores ut. Quod reiciendis nihil. Voluptatem doloremque et maxime suscipit explicabo.\n \rQuasi ducimus quia mollitia unde perspiciatis. Distinctio ratione qui quos facere. Iusto eum distinctio culpa. Incidunt suscipit vel voluptas inventore et. Nemo eos tempora sit beatae quia repudiandae iure autem est.",
+                "globalRank": 90,
+                "ieltsAccepted": false,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:11.000Z",
+                "updatedAt": "2021-07-26T12:48:11.000Z"
+            },
+            {
+                "uniEmail": "eldon_yundt@gmail.com",
+                "uniId": 8,
+                "uniUUID": "a1d9c675-ca3e-4486-945b-af65d776ebce",
+                "name": "Hudson LLC",
+                "childOf": null,
+                "campusOf": null,
+                "city": "t",
+                "stateId": 46,
+                "overview": "Est neque officiis doloremque excepturi velit eos suscipit. Officia tenetur velit commodi vitae et aliquid non commodi. Temporibus eaque iste et eos asperiores occaecati.\n \rQuibusdam commodi omnis tempore aliquid atque et id. Qui vitae dolorem perspiciatis sunt est perferendis ab ex ducimus. Qui nisi quo beatae consequuntur alias nemo nihil aut facilis. Eveniet et iusto sint enim ducimus ullam autem. Maxime et eos cupiditate nam nemo omnis omnis voluptatibus. Deleniti sequi nam magni beatae quod asperiores voluptatem velit ex.",
+                "globalRank": 56,
+                "ieltsAccepted": true,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:11.000Z",
+                "updatedAt": "2021-07-26T12:48:11.000Z"
+            },
+            {
+                "uniEmail": "lucio85@gmail.com",
+                "uniId": 9,
+                "uniUUID": "736c4c7f-d8d1-4d8b-bad5-92f53ac8be11",
+                "name": "Halvorson - Marquardt",
+                "childOf": null,
+                "campusOf": null,
+                "city": "b",
+                "stateId": 138,
+                "overview": "Possimus amet pariatur consequatur itaque sed itaque. Dicta molestiae delectus repudiandae deserunt nobis pariatur ut. Quia molestias dolorem fugiat et. Reprehenderit rerum aspernatur exercitationem consequatur.\n \rLibero ad sint est ut dolor. Aut ipsa commodi. Fuga velit fugit veniam delectus aut magnam vel laboriosam.",
+                "globalRank": 36,
+                "ieltsAccepted": false,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:11.000Z",
+                "updatedAt": "2021-07-26T12:48:11.000Z"
+            },
+            {
+                "uniEmail": "jacey.schowalter41@gmail.com",
+                "uniId": 10,
+                "uniUUID": "cdebcc80-0bd7-42b9-af5c-cdb98212abd3",
+                "name": "Mitchell - Erdman",
+                "childOf": null,
+                "campusOf": null,
+                "city": "s",
+                "stateId": 23,
+                "overview": "Voluptates sed magni excepturi aut vitae aut commodi dicta. Sapiente rerum omnis dolores enim. Maxime ut ea error sunt error.\n \rReprehenderit rerum illum reprehenderit earum totam quae sed quas. Nobis occaecati voluptatem hic laudantium quia sit eum. Quaerat tenetur aperiam nam architecto. Voluptas eum occaecati nesciunt et. Vel aut nam necessitatibus. Quod quis aut tempore omnis assumenda veniam temporibus aliquid.",
+                "globalRank": 103,
+                "ieltsAccepted": true,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:11.000Z",
+                "updatedAt": "2021-07-26T12:48:11.000Z"
+            },
+            {
+                "uniEmail": "adrian_farrell@yahoo.com",
+                "uniId": 11,
+                "uniUUID": "797fb429-aca0-4bc4-a1e8-1f8fb3754090",
+                "name": "Marks - Wisoky",
+                "childOf": null,
+                "campusOf": null,
+                "city": "k",
+                "stateId": 35,
+                "overview": "Inventore repudiandae natus quos ut est inventore aliquam. Non nisi qui voluptas quia nemo non inventore non rerum. Et nulla voluptatem excepturi doloremque in voluptas. Provident consequatur eius voluptatum aut excepturi error qui blanditiis rerum. At voluptatum ullam ex nostrum facere vero labore assumenda.\n \rNisi consequatur voluptas earum aut. Qui rerum quam itaque est et velit voluptate voluptate aliquam. Dicta accusantium quam voluptatem quidem molestiae voluptatem. Molestias aperiam unde. Cupiditate placeat quo consequatur. Quisquam est tempore pariatur aperiam et repellendus non.",
+                "globalRank": 48,
+                "ieltsAccepted": false,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:11.000Z",
+                "updatedAt": "2021-07-26T12:48:11.000Z"
+            },
+            {
+                "uniEmail": "jermain_block35@hotmail.com",
+                "uniId": 12,
+                "uniUUID": "458d0936-c92f-4ef4-a81f-5562cf302d9b",
+                "name": "Jenkins - Witting",
+                "childOf": null,
+                "campusOf": null,
+                "city": "l",
+                "stateId": 16,
+                "overview": "Totam eveniet molestias odio. Qui eum earum. Odit quis tempore cupiditate.\n \rQuia error ea autem. Quia est voluptatem nobis omnis illo nostrum neque quaerat. Mollitia aut rerum. Unde distinctio ipsam dolorum nesciunt quaerat repudiandae consequatur et id. Ea asperiores sequi fuga architecto voluptatem quia ipsum deleniti et.",
+                "globalRank": 147,
+                "ieltsAccepted": true,
+                "countryId": 221,
+                "createdAt": "2021-07-26T12:48:11.000Z",
+                "updatedAt": "2021-07-26T12:48:11.000Z"
+            },
+            {
+                "uniEmail": "hulda16@hotmail.com",
+                "uniId": 13,
+                "uniUUID": "fe890caa-18af-4434-9265-1a3b27547fe9",
+                "name": "Kshlerin - Dooley",
+                "childOf": null,
+                "campusOf": null,
+                "city": "z",
+                "stateId": 4,
+                "overview": "Reprehenderit consequatur voluptatem id consectetur perferendis omnis veritatis. A quis explicabo rem ducimus. Blanditiis vero sunt facere. Dolor maiores et officiis ea voluptas tempora. Omnis non suscipit est excepturi eum nihil dolores ab. Dolores debitis possimus.\n \rPorro rem maiores quo ad aspernatur sed eos. Quisquam aut adipisci eligendi totam in non vel et. Totam odio accusantium. Iure doloremque officia.",
+                "globalRank": 124,
+                "ieltsAccepted": false,
+                "countryId": 223,
+                "createdAt": "2021-07-26T12:48:11.000Z",
+                "updatedAt": "2021-07-26T12:48:11.000Z"
+            },
+            {
+                "uniEmail": "jo11@gmail.com",
+                "uniId": 14,
+                "uniUUID": "c858c68a-20ad-463a-850c-c796b27f3a60",
+                "name": "Feeney - Deckow",
+                "childOf": null,
+                "campusOf": null,
+                "city": "q",
+                "stateId": 17,
+                "overview": "Rerum iusto quo corrupti temporibus ea aut dolore unde sint. Enim et cumque et consequatur perspiciatis saepe voluptatum facere reprehenderit. Similique ullam laboriosam consequatur qui at vero ratione. Sint error ea sed fugit. Quae eum qui vitae voluptatem.\n \rEt repellat perferendis nam ex quo. Nesciunt nobis natus aut non adipisci quis. Eum hic saepe consequuntur. Et cupiditate error fugiat culpa quas.",
+                "globalRank": 107,
+                "ieltsAccepted": true,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:11.000Z",
+                "updatedAt": "2021-07-26T12:48:11.000Z"
+            },
+            {
+                "uniEmail": "selina_emmerich95@yahoo.com",
+                "uniId": 15,
+                "uniUUID": "842bd51a-c26e-4516-957c-3e836bcec122",
+                "name": "Thompson, Torphy and Willms",
+                "childOf": null,
+                "campusOf": null,
+                "city": "i",
+                "stateId": 68,
+                "overview": "Dolor qui dolor ab veniam numquam vel enim. Nostrum ipsam ut quia similique. Fuga corrupti corrupti voluptate. Iste cumque minima.\n \rQuas quia sequi veniam facilis aut nulla. Reprehenderit sit facere voluptas aut aut dolorem voluptatum dolores. Voluptatem nobis minus voluptatem libero et. Voluptatem sed dolorum magnam non excepturi beatae. Et doloribus dolorum molestiae accusamus occaecati. Incidunt iusto sunt amet totam.",
+                "globalRank": 80,
+                "ieltsAccepted": false,
+                "countryId": 223,
+                "createdAt": "2021-07-26T12:48:11.000Z",
+                "updatedAt": "2021-07-26T12:48:11.000Z"
+            },
+            {
+                "uniEmail": "lorena19@yahoo.com",
+                "uniId": 16,
+                "uniUUID": "e28f4524-2dad-4ff3-afc4-6c2f1df4be1e",
+                "name": "Kshlerin, Kilback and McCullough",
+                "childOf": null,
+                "campusOf": null,
+                "city": "w",
+                "stateId": 86,
+                "overview": "Dicta hic cum in ex tenetur sunt exercitationem. Necessitatibus qui mollitia harum est optio iure nulla est. Enim fuga facilis. Dolore possimus omnis. Corporis omnis ipsam eius consequatur voluptatem sit voluptatum qui. Officiis sint nesciunt esse.\n \rQui labore quia aut incidunt pariatur aut in hic corporis. Eum et qui sint architecto atque et voluptatem alias. Molestias perferendis eveniet qui dolore tempore.",
+                "globalRank": 58,
+                "ieltsAccepted": false,
+                "countryId": 97,
+                "createdAt": "2021-07-26T12:48:11.000Z",
+                "updatedAt": "2021-07-26T12:48:11.000Z"
+            },
+            {
+                "uniEmail": "rylan.zulauf@yahoo.com",
+                "uniId": 17,
+                "uniUUID": "6b2bd3fb-2eb4-4e9e-a1fd-6bd1b43cafac",
+                "name": "Parisian, Wehner and Monahan",
+                "childOf": null,
+                "campusOf": null,
+                "city": "f",
+                "stateId": 31,
+                "overview": "Fugiat voluptates vero ut repudiandae laboriosam illum sit qui provident. Dolorum consectetur sint. Quia magni ut. Doloribus aliquam fugit quas quam quo quo modi consequatur. Beatae placeat voluptatem. Iure omnis perspiciatis quis temporibus eaque ipsum animi voluptates.\n \rRepellendus ad aut. Pariatur incidunt rerum fugit id saepe voluptatem officiis fuga harum. Non esse odit dolore cum.",
+                "globalRank": 75,
+                "ieltsAccepted": true,
+                "countryId": 221,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "vilma.cummings79@hotmail.com",
+                "uniId": 18,
+                "uniUUID": "e5e7a004-f2eb-4fb3-83f7-76b17675c61e",
+                "name": "Wuckert Inc",
+                "childOf": null,
+                "campusOf": null,
+                "city": "m",
+                "stateId": 32,
+                "overview": "Hic est et ipsam. Totam at quos. Nulla temporibus consequatur id perspiciatis est est laudantium reiciendis. Necessitatibus est molestiae omnis officia vitae repellat. Dolores asperiores mollitia ratione autem maiores libero tempore. Sequi dolor consequatur doloribus aut quo magni at consequatur.\n \rVoluptatem aut dicta quis exercitationem et iure. Consequatur ex aliquam labore cumque perspiciatis. Est ducimus unde sint perferendis.",
+                "globalRank": 92,
+                "ieltsAccepted": false,
+                "countryId": 97,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "christian64@yahoo.com",
+                "uniId": 19,
+                "uniUUID": "2aa17b79-cb48-44c2-bf47-262adef2d144",
+                "name": "Johns, Deckow and Ruecker",
+                "childOf": null,
+                "campusOf": null,
+                "city": "f",
+                "stateId": 131,
+                "overview": "Deleniti quaerat voluptatem eum. Doloribus expedita et et nihil tenetur voluptatum deserunt repellat perferendis. Dolorum doloremque omnis quae sapiente doloribus accusantium. Iusto eaque laudantium. Quae sunt itaque eveniet. Iste illo cumque et nobis magnam qui vero voluptatem.\n \rAtque eum rerum quisquam soluta consequatur ipsum. Facilis officia iure quos iusto corrupti aut non quia quia. Iure itaque non in. Similique laboriosam non soluta maiores facilis. Maiores temporibus excepturi quod soluta qui distinctio est.",
+                "globalRank": 42,
+                "ieltsAccepted": true,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "justice.murazik@hotmail.com",
+                "uniId": 20,
+                "uniUUID": "4ea591b9-6595-41a1-85fe-f50107df2a28",
+                "name": "Pagac LLC",
+                "childOf": null,
+                "campusOf": null,
+                "city": "k",
+                "stateId": 134,
+                "overview": "Occaecati laborum aperiam aut excepturi. Vitae sint alias est unde vel laudantium. Eligendi quia rerum.\n \rFuga quisquam illo consequatur praesentium numquam ducimus aperiam quia. In cupiditate enim et vitae iusto ut omnis. Corporis consequatur ut eum cumque quia iste sed quam ut. Enim pariatur id qui commodi quas aperiam. Nemo amet aut inventore placeat voluptatem. Qui sint tenetur eum est eos et quae aut.",
+                "globalRank": 27,
+                "ieltsAccepted": true,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "laurie10@yahoo.com",
+                "uniId": 21,
+                "uniUUID": "72e3567f-7bb7-430a-8e3f-70f0619ea5c3",
+                "name": "Howe, Beier and Ledner",
+                "childOf": null,
+                "campusOf": null,
+                "city": "k",
+                "stateId": 38,
+                "overview": "Cumque neque repellendus ea iste voluptas. Animi architecto aspernatur. Et voluptatem ea et. Qui qui nulla. Nobis nihil minus odio aut atque debitis.\n \rFugiat corrupti neque. Ipsum quae voluptatibus quo et nisi mollitia minus ipsum. Voluptas ipsam labore amet officia ipsum amet asperiores qui cupiditate. Mollitia non dolorem error.",
+                "globalRank": 32,
+                "ieltsAccepted": true,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "david.morissette85@hotmail.com",
+                "uniId": 22,
+                "uniUUID": "7791a315-c70b-4d19-a2da-230dea49b59f",
+                "name": "Okuneva - Kunze",
+                "childOf": null,
+                "campusOf": null,
+                "city": "j",
+                "stateId": 117,
+                "overview": "Incidunt aspernatur quia ut quae repudiandae. Qui iste nam aut qui quam minus laboriosam. Id placeat minima accusantium ipsum earum nesciunt et. Culpa dicta et voluptatem debitis. Ut labore tempore quia quae quia provident.\n \rEa est illo sint beatae aliquid non. Veritatis cumque omnis. Totam beatae eligendi quidem dolorem quam quia. Provident ea non molestias molestiae aut quae.",
+                "globalRank": 45,
+                "ieltsAccepted": true,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "meaghan46@gmail.com",
+                "uniId": 23,
+                "uniUUID": "2b7ba23d-cbcd-4cb9-8e66-7c2e4e3a2d28",
+                "name": "Beier - Friesen",
+                "childOf": null,
+                "campusOf": null,
+                "city": "p",
+                "stateId": 121,
+                "overview": "Qui eveniet ratione repellendus excepturi omnis expedita eos eligendi facere. Dolorum autem id laborum. Deleniti eveniet aut exercitationem. Quo repudiandae cupiditate velit vel quia vel unde quibusdam atque. Vel magnam et qui id voluptas. Odio minima officia sed provident.\n \rEx in odio at qui velit. Nobis minus porro quidem perspiciatis. Omnis eum cupiditate dicta dolorum ab nemo aspernatur tempora pariatur.",
+                "globalRank": 129,
+                "ieltsAccepted": true,
+                "countryId": 221,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "randy23@gmail.com",
+                "uniId": 24,
+                "uniUUID": "e067b006-9535-40cd-9e53-8f771ef68738",
+                "name": "Rowe Group",
+                "childOf": null,
+                "campusOf": null,
+                "city": "l",
+                "stateId": 15,
+                "overview": "Velit commodi ab enim. Et aut neque nesciunt. Quo voluptatem cumque dolorem nihil iste. Facere optio natus. Sint aperiam ipsa officia et accusantium nobis ea ex. Totam aut quis numquam commodi ut deserunt incidunt.\n \rDolorem atque animi est. Labore quidem eum nemo reprehenderit voluptas sint ducimus ducimus ipsum. Ut qui non magni consequatur quis omnis.",
+                "globalRank": 130,
+                "ieltsAccepted": true,
+                "countryId": 97,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "priscilla.lueilwitz@gmail.com",
+                "uniId": 25,
+                "uniUUID": "e8ca992f-cc21-4a9e-971a-207f2e2568f3",
+                "name": "Lakin, Larson and Aufderhar",
+                "childOf": null,
+                "campusOf": null,
+                "city": "s",
+                "stateId": 3,
+                "overview": "Veritatis nihil aut et nam dolor. Voluptas est est magni in eveniet iusto consequatur totam. Inventore perspiciatis et quia perspiciatis alias voluptates dolor.\n \rOmnis expedita corporis non et rerum fuga aut omnis voluptatem. Nemo qui voluptatem distinctio quo soluta qui sed possimus hic. Facilis repudiandae totam non. Praesentium placeat quos aut dicta dolorem nesciunt molestiae. Animi aspernatur blanditiis cupiditate suscipit. Dolorum voluptatem aspernatur ad et.",
+                "globalRank": 142,
+                "ieltsAccepted": false,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "freddie_muller69@yahoo.com",
+                "uniId": 26,
+                "uniUUID": "68e447ae-d6e0-4621-bc56-6cf877b48396",
+                "name": "Runte, Marquardt and Daugherty",
+                "childOf": null,
+                "campusOf": null,
+                "city": "f",
+                "stateId": 36,
+                "overview": "Quo et illo deserunt doloremque rem dolor odit. Ducimus quo sed voluptas dolor similique. Autem quia explicabo occaecati sint.\n \rHic eius molestias fugit id consequatur. Porro impedit maiores magnam. Rerum unde corporis fuga eos voluptatum.",
+                "globalRank": 147,
+                "ieltsAccepted": true,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "afton.considine@hotmail.com",
+                "uniId": 27,
+                "uniUUID": "14422274-b26a-43b7-863a-d3d53578141e",
+                "name": "Schmidt Group",
+                "childOf": null,
+                "campusOf": null,
+                "city": "f",
+                "stateId": 137,
+                "overview": "Maiores facere natus qui suscipit molestiae sunt dolorem excepturi. Veritatis tenetur odit quis. Accusantium quam veritatis voluptas saepe nostrum tenetur rem distinctio sed. Est voluptatem quam ut voluptatem et. Nesciunt est quisquam sapiente.\n \rHic optio et velit facilis recusandae. Qui est voluptatem ut alias quis voluptatem quia. Maiores consectetur laboriosam rem totam. Sunt sapiente ut et rem dolorem veritatis unde atque id. Dolore laudantium cupiditate.",
+                "globalRank": 112,
+                "ieltsAccepted": false,
+                "countryId": 97,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "nyah34@gmail.com",
+                "uniId": 28,
+                "uniUUID": "e06299d0-0d03-40c2-8668-ed4f50063fac",
+                "name": "Greenholt LLC",
+                "childOf": null,
+                "campusOf": null,
+                "city": "j",
+                "stateId": 98,
+                "overview": "Corporis enim tempore illum. Nulla voluptatibus sint fuga alias voluptatum natus aspernatur. Eius ratione et eos. Distinctio voluptas rerum ab voluptatem qui est.\n \rSed et quae molestias repellendus quia distinctio. Laboriosam ullam distinctio provident qui eius deserunt architecto rem quos. Et laborum libero ea magnam nostrum fuga optio. Est corporis aliquam et et placeat.",
+                "globalRank": 130,
+                "ieltsAccepted": false,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "armani27@hotmail.com",
+                "uniId": 29,
+                "uniUUID": "3958ef0a-2429-4b63-bfa4-444013956202",
+                "name": "Ferry, Pagac and Hermann",
+                "childOf": null,
+                "campusOf": null,
+                "city": "y",
+                "stateId": 22,
+                "overview": "Et voluptatum sed omnis dicta sunt. Delectus eaque qui rerum est sed molestias provident. Sint vel in rerum. Itaque molestiae rerum nisi magni aut autem qui. Rerum ut incidunt repudiandae sed suscipit ea aut. Amet deserunt dolor asperiores minus eum.\n \rQui nesciunt facilis reiciendis quaerat aut unde deserunt cumque et. Ut quia eum omnis in quis. Aut eligendi sunt nesciunt qui eum qui. Reiciendis necessitatibus atque ut. Molestiae voluptas ut nobis eos nesciunt repellendus nihil et.",
+                "globalRank": 36,
+                "ieltsAccepted": false,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "bryon.deckow@hotmail.com",
+                "uniId": 30,
+                "uniUUID": "50e3066b-113d-431d-a3a0-8dd6a30117c8",
+                "name": "Gerlach Inc",
+                "childOf": null,
+                "campusOf": null,
+                "city": "g",
+                "stateId": 1,
+                "overview": "Qui et dicta aperiam et autem sed odit iusto facilis. Unde a maxime rerum aut dolorum eligendi illum. Minus blanditiis enim fugiat sunt vel. Quis atque repellat ut ut et ipsam eos eum dolorum. Dignissimos rerum rem.\n \rEt vitae consequatur minima asperiores possimus a enim. Iste aut voluptatem nulla deserunt expedita. Dicta quia dolor qui culpa qui. Modi qui aliquam voluptas iste maiores quibusdam debitis. Quod temporibus accusantium. Dolorem facilis sed nobis eligendi.",
+                "globalRank": 92,
+                "ieltsAccepted": false,
+                "countryId": 97,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "edgardo72@hotmail.com",
+                "uniId": 31,
+                "uniUUID": "62b6bfc6-fdb0-4d23-a08a-f7184f2a9906",
+                "name": "Towne, Bailey and Windler",
+                "childOf": null,
+                "campusOf": null,
+                "city": "t",
+                "stateId": 104,
+                "overview": "Nesciunt saepe tenetur nemo. Voluptatem nobis itaque laudantium amet eaque consequatur aut voluptatem. Aspernatur amet exercitationem aut minus similique quo qui tenetur.\n \rOmnis omnis mollitia sed qui. Expedita voluptatibus reprehenderit ea cum voluptas. Ipsa dolorem quibusdam consequatur totam dolorum autem.",
+                "globalRank": 75,
+                "ieltsAccepted": true,
+                "countryId": 223,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "norval_collins@hotmail.com",
+                "uniId": 32,
+                "uniUUID": "81c9e8de-da0b-45ae-8264-efdcd1c4751e",
+                "name": "Walter LLC",
+                "childOf": null,
+                "campusOf": null,
+                "city": "e",
+                "stateId": 15,
+                "overview": "Sint aspernatur asperiores sit fuga pariatur harum. Culpa aspernatur delectus consectetur est commodi maiores ut. Molestiae molestiae omnis aliquam dolores.\n \rAccusamus magni debitis. Ut possimus modi itaque a delectus omnis error modi sapiente. Doloribus aut atque modi voluptatum nemo.",
+                "globalRank": 80,
+                "ieltsAccepted": false,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "nestor.rice@yahoo.com",
+                "uniId": 33,
+                "uniUUID": "8a633bb1-35f5-41ea-9bea-5712ace449b8",
+                "name": "Schimmel, Jacobs and Kozey",
+                "childOf": null,
+                "campusOf": null,
+                "city": "t",
+                "stateId": 98,
+                "overview": "Tenetur dolor nihil voluptatibus atque minus. Placeat labore id. Rem nostrum rerum saepe sit maiores ad vitae itaque. Quam expedita sit ea sequi consequatur reprehenderit aspernatur est. Quaerat rerum est voluptatem. Sequi non eum.\n \rIncidunt corrupti aut sequi velit ut. Et rerum voluptate quia qui. Atque dolores nisi delectus sit velit. Quis magnam sapiente eveniet. Repudiandae at velit perspiciatis nostrum voluptas voluptate amet et est.",
+                "globalRank": 14,
+                "ieltsAccepted": true,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:12.000Z",
+                "updatedAt": "2021-07-26T12:48:12.000Z"
+            },
+            {
+                "uniEmail": "cale_wolf32@yahoo.com",
+                "uniId": 34,
+                "uniUUID": "cbe24f6d-c894-4075-aa5d-2acfb76e63fb",
+                "name": "Lynch, Hoeger and McCullough",
+                "childOf": null,
+                "campusOf": null,
+                "city": "v",
+                "stateId": 58,
+                "overview": "Dolores vel quasi ad rerum quis cupiditate libero suscipit eos. Ut et ut delectus id aliquam voluptate error. Quibusdam ut ab. Accusantium ratione a excepturi deleniti. Quisquam et culpa. Voluptatem minima qui omnis sed et omnis optio praesentium voluptatibus.\n \rQui voluptatum dolores at rerum expedita beatae facilis illo inventore. Natus aspernatur tempora ut officiis. Et possimus ut animi.",
+                "globalRank": 39,
+                "ieltsAccepted": true,
+                "countryId": 97,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "gabrielle60@gmail.com",
+                "uniId": 35,
+                "uniUUID": "8fb17a23-6997-4c7d-ab8e-413263b41afc",
+                "name": "Brown and Sons",
+                "childOf": null,
+                "campusOf": null,
+                "city": "i",
+                "stateId": 71,
+                "overview": "Ipsa veritatis aut. Fugiat id dolor ipsa et sint qui totam dicta sed. Sequi est quam iusto. Eum rerum corrupti mollitia autem cupiditate saepe voluptatum autem iusto. Est voluptatem similique cupiditate occaecati unde et cum odit doloremque. Ut quia temporibus corrupti voluptatem similique ullam.\n \rCulpa occaecati quo est deleniti similique molestiae aliquid. Pariatur voluptate quam officia aut et repudiandae ipsam. Blanditiis consequatur placeat nihil velit ipsam aspernatur similique incidunt sed. Quia omnis occaecati recusandae. Soluta tempora quo dolorem consequatur praesentium eum quidem. Ex unde et dolorem voluptates.",
+                "globalRank": 24,
+                "ieltsAccepted": true,
+                "countryId": 223,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "stevie_krajcik39@hotmail.com",
+                "uniId": 36,
+                "uniUUID": "b7b272d3-84e4-4b0a-a2ef-cdb87e33195f",
+                "name": "Borer - Huels",
+                "childOf": null,
+                "campusOf": null,
+                "city": "t",
+                "stateId": 18,
+                "overview": "Voluptas veniam maxime qui ab. Molestiae rem ut blanditiis dolorem voluptate. Ratione vel explicabo aliquid. Dolore aut quia possimus quos explicabo facilis ut iusto numquam.\n \rIusto consequatur est et. Est aut itaque non rerum ducimus aliquid tenetur totam. Veniam dolores enim et et adipisci omnis. Molestiae quod molestiae fuga impedit. Voluptas ad voluptatem voluptatibus. Deserunt asperiores fugit provident id ducimus sit alias.",
+                "globalRank": 89,
+                "ieltsAccepted": true,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "lydia3@hotmail.com",
+                "uniId": 37,
+                "uniUUID": "cdcdb314-0b1e-4ebe-a511-00b344830355",
+                "name": "Kuvalis - Padberg",
+                "childOf": null,
+                "campusOf": null,
+                "city": "a",
+                "stateId": 65,
+                "overview": "Nemo expedita neque vero autem sequi est et. Modi aliquam quaerat voluptates neque consectetur. In qui sed non laudantium facilis autem officiis sunt. Qui ut et officia nobis et voluptatum et quas. Voluptatibus dolor non reiciendis numquam aut in. Voluptas nostrum assumenda voluptatem praesentium laudantium iure.\n \rEnim sed sed. Minima magni voluptatibus non temporibus dolorem rerum qui tenetur. Totam et perspiciatis nesciunt corporis similique animi est alias. Et omnis et qui et aut temporibus unde.",
+                "globalRank": 111,
+                "ieltsAccepted": true,
+                "countryId": 97,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "seth77@yahoo.com",
+                "uniId": 38,
+                "uniUUID": "a1247827-f93f-4dd9-98d2-a0430bae4006",
+                "name": "Kihn Inc",
+                "childOf": null,
+                "campusOf": null,
+                "city": "u",
+                "stateId": 13,
+                "overview": "Ut laudantium aliquam eligendi dignissimos dolore aut quo molestiae. Nam laboriosam quas. Necessitatibus dignissimos ipsam aut est odit tempora vero cum reprehenderit.\n \rRerum magnam facilis soluta. Est quia qui sunt. Sunt fugit aut repellat pariatur porro necessitatibus earum ut.",
+                "globalRank": 27,
+                "ieltsAccepted": true,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "mallie44@gmail.com",
+                "uniId": 39,
+                "uniUUID": "1287b31f-623b-4db4-99e0-bb6beecf0545",
+                "name": "Aufderhar Inc",
+                "childOf": null,
+                "campusOf": null,
+                "city": "c",
+                "stateId": 88,
+                "overview": "Asperiores qui aut et reprehenderit aspernatur sit. Aut qui veritatis ut necessitatibus et est dolor quidem sint. Esse tempora est laudantium placeat blanditiis explicabo est alias ut.\n \rExercitationem vel architecto. Saepe placeat aut mollitia. Qui modi aut eius modi. Qui nisi quisquam recusandae.",
+                "globalRank": 63,
+                "ieltsAccepted": true,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "alana.runte80@yahoo.com",
+                "uniId": 40,
+                "uniUUID": "f255e2d4-273e-4604-bd9e-0d699ba9c433",
+                "name": "Carroll - Harvey",
+                "childOf": null,
+                "campusOf": null,
+                "city": "p",
+                "stateId": 50,
+                "overview": "Rerum sunt et quam laborum saepe dicta nulla ipsum nostrum. Quisquam doloribus esse molestiae vel aspernatur nulla. Dolorem necessitatibus commodi officiis et rerum quod fuga.\n \rIpsam dolorum tempora numquam ab eligendi dolorem. Eaque omnis unde earum quibusdam accusamus expedita. Beatae neque dolores voluptatem praesentium voluptatem tenetur est nostrum. Labore officia et sint. Earum optio consequatur quia inventore laborum maxime rerum.",
+                "globalRank": 56,
+                "ieltsAccepted": false,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "caitlyn14@hotmail.com",
+                "uniId": 41,
+                "uniUUID": "92217a5e-3e95-4f9c-98bf-24659f3da2f2",
+                "name": "Feil, Anderson and Jones",
+                "childOf": null,
+                "campusOf": null,
+                "city": "a",
+                "stateId": 9,
+                "overview": "Velit molestiae perferendis sunt ullam nihil qui quia. Omnis provident facere quis sit et laboriosam eum. Quis et aut eligendi. Libero iusto omnis velit illo quo.\n \rNisi alias odit neque. Sit voluptatum unde iusto soluta tempore aut. Est officiis pariatur provident vero officia velit.",
+                "globalRank": 6,
+                "ieltsAccepted": true,
+                "countryId": 223,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "euna_schmidt@yahoo.com",
+                "uniId": 42,
+                "uniUUID": "fc75a45f-2cc4-4a38-baaa-2103ab880998",
+                "name": "Feil Inc",
+                "childOf": null,
+                "campusOf": null,
+                "city": "j",
+                "stateId": 127,
+                "overview": "Optio dolores in molestiae. Consequuntur repellendus qui amet quas ad harum. Harum accusamus magnam sunt. Et amet consequatur.\n \rOccaecati eum ratione debitis. Iusto quisquam nisi fugiat ipsum quisquam magni molestias. Quibusdam alias et maxime soluta iure sed itaque soluta. Eos incidunt adipisci est et. Optio quo laboriosam sequi qui. Corporis eligendi consequatur officiis porro perspiciatis.",
+                "globalRank": 134,
+                "ieltsAccepted": true,
+                "countryId": 223,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "dorothea99@yahoo.com",
+                "uniId": 43,
+                "uniUUID": "a2f24323-db9c-43b1-9800-f0b9009b4f9b",
+                "name": "Parisian - Haag",
+                "childOf": null,
+                "campusOf": null,
+                "city": "c",
+                "stateId": 75,
+                "overview": "Nisi porro sed molestiae. Labore facilis voluptatem cum similique at reiciendis. Ea labore aut quasi dolorum eius id fugit enim dolores. Impedit eligendi minima sint.\n \rRepudiandae adipisci rerum. Quod recusandae nihil odio occaecati expedita voluptas et. Et odio quia iusto minima exercitationem explicabo. Cum odio voluptatum quo ea dolorem ex doloribus consequuntur dolorum. Ut sit sit iusto repellat reiciendis sit quidem sunt.",
+                "globalRank": 80,
+                "ieltsAccepted": false,
+                "countryId": 223,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "ephraim_treutel22@yahoo.com",
+                "uniId": 44,
+                "uniUUID": "94f5c14b-0338-4cbe-a42f-d05b4cd8234e",
+                "name": "Schowalter, Zemlak and Beatty",
+                "childOf": null,
+                "campusOf": null,
+                "city": "x",
+                "stateId": 104,
+                "overview": "Autem nisi maxime. Ipsa vitae sit et odio et dolorem asperiores voluptatem. Voluptatem aut doloribus alias fugiat. Aliquid aperiam odio eaque laudantium deleniti vero qui molestias magnam. Error consequatur fuga voluptas autem soluta et unde officiis voluptas. Aliquam dolorum fugiat itaque non.\n \rIn repudiandae at et dolor qui. Voluptates dolorem eos cum. Incidunt aut accusantium et.",
+                "globalRank": 147,
+                "ieltsAccepted": false,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "dax66@hotmail.com",
+                "uniId": 45,
+                "uniUUID": "78068d62-b311-4801-9e05-e3d9175c779a",
+                "name": "Orn, Wilkinson and Davis",
+                "childOf": null,
+                "campusOf": null,
+                "city": "d",
+                "stateId": 78,
+                "overview": "Nobis nesciunt qui. Repellat nemo temporibus voluptatem maiores ea in accusantium pariatur dicta. Molestias similique ut.\n \rRerum magni animi excepturi. Aspernatur deserunt ea magnam tenetur ut. Incidunt quisquam rerum nostrum voluptatem quo. Porro qui laboriosam architecto error et rem quia. Totam dolorem quia nesciunt alias molestiae quia nulla atque eos.",
+                "globalRank": 31,
+                "ieltsAccepted": false,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "coy56@hotmail.com",
+                "uniId": 46,
+                "uniUUID": "43b14b4c-de37-4c73-877c-90b088bbce5b",
+                "name": "Murphy - Baumbach",
+                "childOf": null,
+                "campusOf": null,
+                "city": "h",
+                "stateId": 78,
+                "overview": "Est natus molestiae non nesciunt veniam voluptas eaque. Ut architecto vero sint repellendus porro voluptatibus natus dolorem est. Ut fuga suscipit iusto sit culpa quidem modi quidem reiciendis. Nesciunt error distinctio velit eveniet aut illum.\n \rEx exercitationem blanditiis rerum beatae perferendis ut dolor. Iusto molestiae id delectus saepe voluptatum. Dolores mollitia odit ad voluptatem excepturi necessitatibus. Sit ut dolorem mollitia sit et. Fuga officia sed.",
+                "globalRank": 131,
+                "ieltsAccepted": true,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "jaycee.orn98@hotmail.com",
+                "uniId": 47,
+                "uniUUID": "886b99da-e95a-4b50-9bc8-6d25eca196b9",
+                "name": "Hahn, Stamm and Monahan",
+                "childOf": null,
+                "campusOf": null,
+                "city": "a",
+                "stateId": 15,
+                "overview": "Qui est sunt. Harum dolore facere repudiandae nisi. A iste omnis. Quidem qui quis saepe.\n \rVoluptatum dolorum ea enim. Natus qui quam dicta ducimus vero. Tempora alias dolorum quibusdam sunt perspiciatis aut et quas voluptatibus. Id sequi impedit ut odio et. Nobis quibusdam eum ut autem. Nihil harum unde.",
+                "globalRank": 149,
+                "ieltsAccepted": false,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "tyree_hoeger52@hotmail.com",
+                "uniId": 48,
+                "uniUUID": "3a41ece8-8afc-49cd-9891-38fb8794d563",
+                "name": "Kshlerin - Cummerata",
+                "childOf": null,
+                "campusOf": null,
+                "city": "d",
+                "stateId": 24,
+                "overview": "Facere eius ut doloremque. Quae dolores praesentium esse quo magni voluptatem sed est. Aut consequatur dolorem consequatur expedita fugiat aut. Minus omnis quaerat dolor. Ut velit modi consequatur voluptatem facere tempora optio exercitationem omnis. Quia qui sed.\n \rEst tempore molestias voluptatum tempora non. Rerum a et eaque in nobis occaecati voluptas occaecati eveniet. Quis harum impedit distinctio atque inventore omnis. Perspiciatis accusantium quos. Aut ipsam enim nobis eos nemo et nihil ut mollitia. Quas sunt tenetur aliquam nulla.",
+                "globalRank": 70,
+                "ieltsAccepted": true,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "horace_swift@gmail.com",
+                "uniId": 49,
+                "uniUUID": "b5ff11d5-cc9b-44f6-ae01-11149d5d0712",
+                "name": "Stokes, Armstrong and Wisozk",
+                "childOf": null,
+                "campusOf": null,
+                "city": "u",
+                "stateId": 145,
+                "overview": "Soluta perspiciatis a. Saepe voluptas aut quo nobis veritatis. Deleniti quo voluptatem aliquid id cumque rerum tenetur dolor.\n \rCommodi dignissimos dicta voluptatem sunt quo officiis veritatis consequatur. Voluptatem explicabo laborum ut ipsum suscipit rerum sunt accusamus maxime. Pariatur fugit molestiae earum ea. Nihil laudantium deleniti.",
+                "globalRank": 110,
+                "ieltsAccepted": false,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "elmo.macgyver35@gmail.com",
+                "uniId": 50,
+                "uniUUID": "3979826b-9654-4c39-874d-a76d944d304a",
+                "name": "Bode and Sons",
+                "childOf": null,
+                "campusOf": null,
+                "city": "x",
+                "stateId": 123,
+                "overview": "Ea sunt labore consequatur officia. Sunt quos ut et facilis quidem praesentium accusamus. Error cupiditate perspiciatis sed quis vitae exercitationem id est esse.\n \rEnim provident commodi nostrum recusandae dolor. Blanditiis porro expedita enim quisquam et. Ducimus nulla sit.",
+                "globalRank": 1,
+                "ieltsAccepted": false,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "garth59@yahoo.com",
+                "uniId": 51,
+                "uniUUID": "f2d1cf0e-40fc-4e08-887b-0fc6a7aaf37d",
+                "name": "Howe, McLaughlin and Sauer",
+                "childOf": null,
+                "campusOf": null,
+                "city": "a",
+                "stateId": 134,
+                "overview": "Tempore vitae asperiores aperiam debitis dignissimos quisquam. Magni enim laborum nisi reiciendis deleniti ipsam rerum nulla. Et nemo consequatur quas molestias officia sit sit possimus. Et sunt fugit repellendus eligendi enim sapiente optio et. Velit veritatis tempore ea.\n \rQui qui provident alias delectus similique odit. Ipsam dolor dolorem aut est. Culpa consequatur id fuga in nihil aliquid. Enim adipisci rerum dolor. Fuga omnis earum. Eum dolor voluptatem.",
+                "globalRank": 106,
+                "ieltsAccepted": true,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:13.000Z",
+                "updatedAt": "2021-07-26T12:48:13.000Z"
+            },
+            {
+                "uniEmail": "catherine.schaefer@gmail.com",
+                "uniId": 52,
+                "uniUUID": "aabb3227-49e0-4775-ac71-447e4e30f9a0",
+                "name": "Hyatt Inc",
+                "childOf": null,
+                "campusOf": null,
+                "city": "z",
+                "stateId": 91,
+                "overview": "Aut maxime molestias ullam harum ut. Omnis quidem et eos ut. Consectetur id culpa voluptas.\n \rNobis labore sit consequuntur. Ut ullam tempore recusandae cupiditate saepe itaque suscipit. Eius sed est cum fuga rem esse. Quae dolor fugiat ut nesciunt. Rem est recusandae porro.",
+                "globalRank": 28,
+                "ieltsAccepted": false,
+                "countryId": 97,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "dahlia52@yahoo.com",
+                "uniId": 53,
+                "uniUUID": "ec832b45-87a5-4a5e-aef0-c44be2c7cd88",
+                "name": "Abshire - Yundt",
+                "childOf": null,
+                "campusOf": null,
+                "city": "s",
+                "stateId": 123,
+                "overview": "Aut voluptate illo et corrupti non ut rem hic. Eum omnis voluptatem inventore. Quia eos in quae non. Sit perspiciatis nemo nisi sit laboriosam qui. Quod omnis totam quibusdam nulla occaecati sed sit similique. Dolorem non consequatur.\n \rDignissimos vero rerum qui atque. Qui enim aut maiores ea dolores quo et rerum quod. Similique ex repudiandae.",
+                "globalRank": 81,
+                "ieltsAccepted": false,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "elnora.nienow@gmail.com",
+                "uniId": 54,
+                "uniUUID": "871a1356-6178-47a5-8326-d6571434027a",
+                "name": "West, Kohler and Wunsch",
+                "childOf": null,
+                "campusOf": null,
+                "city": "i",
+                "stateId": 1,
+                "overview": "Voluptatem ut porro doloremque rerum ut mollitia. Maiores rerum exercitationem alias praesentium officiis eveniet. Non sequi earum ut quae.\n \rUt cum officia aut non veniam. Quibusdam beatae quisquam nam quis exercitationem ab voluptatem facere. Consequatur ipsum voluptate quod adipisci adipisci voluptatem cum voluptatem. Autem eaque rerum vel voluptas nobis sequi vel numquam. Natus distinctio quia itaque eaque natus earum odio. Consequatur sapiente ea earum ex consectetur reprehenderit occaecati voluptas.",
+                "globalRank": 107,
+                "ieltsAccepted": true,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "jaqueline.kris@hotmail.com",
+                "uniId": 55,
+                "uniUUID": "407a9293-2c3f-4637-a3c1-6b2f40f95930",
+                "name": "Towne, Renner and Orn",
+                "childOf": null,
+                "campusOf": null,
+                "city": "j",
+                "stateId": 138,
+                "overview": "Tempore quidem iste accusamus ea aut reiciendis. Quisquam quam et officiis. Non blanditiis tempora aut ad delectus qui. Est doloremque tempora corporis dolores temporibus consectetur.\n \rAt qui pariatur est itaque eius quia eveniet officiis est. Pariatur voluptatum alias fugit et et labore. Illum voluptatum facere eligendi debitis dolores. Nostrum saepe illo. Eos tempore cum numquam.",
+                "globalRank": 64,
+                "ieltsAccepted": false,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "brennan21@hotmail.com",
+                "uniId": 56,
+                "uniUUID": "2d2b63fb-cac8-4a86-ba35-f8a8f78ccc7a",
+                "name": "Donnelly, Becker and Lowe",
+                "childOf": null,
+                "campusOf": null,
+                "city": "h",
+                "stateId": 138,
+                "overview": "Sit voluptates minima velit et ipsa mollitia aliquid id eos. Doloremque sunt mollitia. Ducimus saepe nulla aut est id voluptatem et facere. Facilis praesentium consequatur quo nulla. Repellendus illo hic ad. Ea expedita quisquam ipsa nam fuga numquam sed autem ut.\n \rDolores ab eos quae qui et et quia. Quam et excepturi qui. Ipsum alias rerum reprehenderit placeat in iusto vel ab enim. Accusamus rerum ut doloremque iste.",
+                "globalRank": 76,
+                "ieltsAccepted": false,
+                "countryId": 221,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "bette.brown@yahoo.com",
+                "uniId": 57,
+                "uniUUID": "bd4676eb-daaa-4c78-b60d-1833d65e71e0",
+                "name": "Okuneva, Corwin and Rolfson",
+                "childOf": null,
+                "campusOf": null,
+                "city": "x",
+                "stateId": 17,
+                "overview": "Consequatur earum quia dolores et voluptatem. Aut quis autem voluptas. In a ullam.\n \rAtque minus odit ut veritatis distinctio. Earum architecto deleniti impedit ea. Quod esse ex qui. Fugit modi dolorem expedita sunt sit aut. Velit aut aut quibusdam.",
+                "globalRank": 89,
+                "ieltsAccepted": true,
+                "countryId": 223,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "kamren.rath32@hotmail.com",
+                "uniId": 58,
+                "uniUUID": "10065f53-bcb5-4acc-bf42-e46c7ef85b6b",
+                "name": "Strosin and Sons",
+                "childOf": null,
+                "campusOf": null,
+                "city": "q",
+                "stateId": 146,
+                "overview": "Ea maiores explicabo et ut odio vitae dolores. Ullam minus voluptatem placeat eum vero. Autem ipsam ea recusandae quam quidem repudiandae non. Sequi optio temporibus deleniti commodi accusantium reprehenderit ut perspiciatis. Enim qui et id itaque consequatur modi consequatur nulla. Dolorum perspiciatis temporibus.\n \rEos praesentium sit quia. Dolorum tempora eum perspiciatis quia repellat earum omnis. Tenetur necessitatibus ut aut odio cum quo iure harum eveniet.",
+                "globalRank": 58,
+                "ieltsAccepted": false,
+                "countryId": 97,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "modesto37@yahoo.com",
+                "uniId": 59,
+                "uniUUID": "e9936793-6bd7-4cc9-9fa4-38497e549e8f",
+                "name": "Mante, Sauer and Cassin",
+                "childOf": null,
+                "campusOf": null,
+                "city": "g",
+                "stateId": 59,
+                "overview": "Quia consequuntur aut. Ut molestiae maxime voluptas quasi eaque optio ab. Qui sint et non eos commodi ducimus et animi. Provident nihil eos. Occaecati est in possimus quia ipsam culpa omnis nihil. Maxime nisi expedita eaque eum dolorem impedit et earum repellat.\n \rAut saepe modi pariatur. In recusandae velit voluptates qui aut architecto omnis. Animi sit sed consequuntur enim. Dolor ea qui rem ea saepe molestiae.",
+                "globalRank": 45,
+                "ieltsAccepted": true,
+                "countryId": 223,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "nathen_feil37@hotmail.com",
+                "uniId": 60,
+                "uniUUID": "ae307430-0c7a-495c-ae26-239b212f2eb3",
+                "name": "Friesen, Barton and Gulgowski",
+                "childOf": null,
+                "campusOf": null,
+                "city": "e",
+                "stateId": 59,
+                "overview": "Dolores fugit sed. Exercitationem beatae unde facilis aspernatur dolore eaque ex ab excepturi. Et at delectus repellat dolores incidunt dolore. Et velit natus delectus. Rem et nemo temporibus at dolor asperiores cum minima.\n \rPraesentium vitae hic exercitationem quidem. Possimus in commodi nemo tempora omnis maxime non. Ipsum omnis nisi hic debitis laboriosam totam id. Quam animi cupiditate autem repellat.",
+                "globalRank": 61,
+                "ieltsAccepted": false,
+                "countryId": 221,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "cassie48@yahoo.com",
+                "uniId": 61,
+                "uniUUID": "0bf645a3-e7e8-4eff-8683-4aa04df8d4aa",
+                "name": "Lebsack - Yost",
+                "childOf": null,
+                "campusOf": null,
+                "city": "i",
+                "stateId": 116,
+                "overview": "Veritatis similique voluptatem officiis blanditiis amet molestias quibusdam odio quia. Nulla voluptatem totam magnam ullam vel inventore. Eius placeat possimus aut magni inventore ducimus ad. Consequuntur illo ducimus est. Qui quasi rerum molestiae.\n \rUnde quos repellat fugiat dolor. Sequi ex ab nihil. Aut amet ut eum reiciendis qui omnis dicta culpa reiciendis. Ipsam officia atque est officia quia fuga deserunt pariatur. Sit eligendi dolor quasi non. Corrupti illum et possimus commodi voluptate magni ratione suscipit.",
+                "globalRank": 46,
+                "ieltsAccepted": false,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "marta52@hotmail.com",
+                "uniId": 62,
+                "uniUUID": "6a95f404-13f4-4828-b226-ae1c68332f24",
+                "name": "Jast, Donnelly and Hamill",
+                "childOf": null,
+                "campusOf": null,
+                "city": "d",
+                "stateId": 56,
+                "overview": "Voluptatem sint est esse nihil doloribus et. Cum est explicabo necessitatibus sed nisi. Est placeat ut vel qui dignissimos et eos itaque eveniet.\n \rExcepturi assumenda iusto laboriosam quasi non rerum repudiandae accusamus. Cupiditate autem delectus enim qui. Sint veritatis id. Et molestias voluptatibus voluptatum molestias voluptates eos.",
+                "globalRank": 37,
+                "ieltsAccepted": true,
+                "countryId": 223,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "eldridge15@gmail.com",
+                "uniId": 63,
+                "uniUUID": "c9fa794e-68ff-4c53-b033-2d5961ce21c2",
+                "name": "Bogan, Nitzsche and Kihn",
+                "childOf": null,
+                "campusOf": null,
+                "city": "c",
+                "stateId": 73,
+                "overview": "Fuga est ut id earum est. Molestiae iusto non earum sit esse culpa recusandae. Quibusdam enim ullam dolorem aliquam.\n \rOccaecati excepturi dolor aut quia. Distinctio cumque qui amet atque earum aut mollitia id rerum. Et sapiente sit ea corporis qui dignissimos. Enim ut nisi blanditiis ab. Nostrum est unde sunt eius illo rerum et.",
+                "globalRank": 129,
+                "ieltsAccepted": true,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "dewitt_willms@hotmail.com",
+                "uniId": 64,
+                "uniUUID": "315d952d-7d46-40be-92c4-663384bb2656",
+                "name": "Hoeger - Jenkins",
+                "childOf": null,
+                "campusOf": null,
+                "city": "y",
+                "stateId": 83,
+                "overview": "Facilis quos fugiat necessitatibus et dicta expedita sed magnam. In id ea ipsam. Accusamus impedit nulla possimus vero cumque officia tempora. Dolor a dignissimos perspiciatis quos aut. Molestiae a nihil quae dolorum nihil. Maiores autem quis ea illo.\n \rFacilis ea reiciendis neque veniam consequatur rerum. Eum ipsa exercitationem et eum aut aperiam nemo pariatur. Consequatur cupiditate et provident. Cupiditate consequatur aliquid.",
+                "globalRank": 45,
+                "ieltsAccepted": false,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "granville31@yahoo.com",
+                "uniId": 65,
+                "uniUUID": "cdb96656-33ce-4e9a-90cd-59159b9fcd20",
+                "name": "Gaylord, Reinger and Bogan",
+                "childOf": null,
+                "campusOf": null,
+                "city": "j",
+                "stateId": 123,
+                "overview": "Rem possimus doloribus. Maxime nulla modi vel. Enim praesentium deserunt dolor. Alias eum est pariatur.\n \rDucimus nesciunt ut pariatur esse repudiandae iusto odio. Deserunt dolor non maxime error aut repudiandae. Consequatur maiores quam eum. Facilis quasi velit qui vitae ea. Voluptas voluptates debitis magnam deserunt architecto culpa eaque. Qui aut repellendus doloremque deleniti cum sequi.",
+                "globalRank": 62,
+                "ieltsAccepted": false,
+                "countryId": 221,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "astrid.hamill94@gmail.com",
+                "uniId": 66,
+                "uniUUID": "f9b33344-052c-4228-b352-0073ac8a3c28",
+                "name": "Hettinger, Yost and Senger",
+                "childOf": null,
+                "campusOf": null,
+                "city": "e",
+                "stateId": 68,
+                "overview": "Omnis est cum veritatis nisi et quos sint. Hic et amet molestiae ea harum sit ea dolor. Saepe sed et dolor earum et molestiae qui tenetur. Laborum modi id sapiente culpa est sequi.\n \rHarum accusantium et culpa et velit nesciunt. Placeat officiis aut. Nulla at sed optio. Et corporis eos quia qui veritatis nihil. Exercitationem esse explicabo assumenda ab culpa.",
+                "globalRank": 1,
+                "ieltsAccepted": false,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "dana_orn@gmail.com",
+                "uniId": 67,
+                "uniUUID": "4563b637-ed5b-4617-ac73-698a1c358c39",
+                "name": "Buckridge, Sipes and Sauer",
+                "childOf": null,
+                "campusOf": null,
+                "city": "t",
+                "stateId": 57,
+                "overview": "Qui eos nam voluptatem ut provident voluptates. Nihil ab numquam. Quam quia nulla et eius perferendis soluta. Porro quasi adipisci dicta sed. Doloremque sint fuga quia iusto natus magnam et voluptatum sit.\n \rPariatur aut est reprehenderit quasi molestiae voluptatem incidunt. Nulla saepe labore occaecati perferendis eaque similique. Autem quos dolores corporis dolore natus explicabo veniam maiores sed. Non animi minus quo assumenda delectus vel corrupti deleniti nihil.",
+                "globalRank": 58,
+                "ieltsAccepted": true,
+                "countryId": 97,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "dawson76@hotmail.com",
+                "uniId": 68,
+                "uniUUID": "f17e8123-ecae-4819-a339-0afad6e0dfaf",
+                "name": "Harber, Armstrong and O'Connell",
+                "childOf": null,
+                "campusOf": null,
+                "city": "k",
+                "stateId": 11,
+                "overview": "Saepe explicabo aliquam. Rerum laboriosam sequi nihil quo ea sit est reprehenderit vel. Dolorem tempora id in. Voluptatem ea quisquam sed nobis reprehenderit ducimus eius. Harum ipsa nam et. Delectus quasi reprehenderit consequuntur repellendus eaque ea.\n \rExplicabo suscipit voluptate voluptatum incidunt soluta odit modi exercitationem. Maiores numquam sit. Et molestiae eius quod non est sequi corporis reiciendis doloremque.",
+                "globalRank": 19,
+                "ieltsAccepted": true,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "sylvia92@hotmail.com",
+                "uniId": 69,
+                "uniUUID": "d48a2999-fcd3-430a-92fd-fa30f6ca4997",
+                "name": "Williamson - Roob",
+                "childOf": null,
+                "campusOf": null,
+                "city": "v",
+                "stateId": 138,
+                "overview": "Enim voluptas voluptatem consequatur tempore deserunt a id repudiandae accusamus. Exercitationem nostrum ad. Et cumque blanditiis autem excepturi repellat corrupti. Nemo non est temporibus.\n \rEt atque nostrum nemo placeat. Et nisi maiores. Neque praesentium maiores ipsum dignissimos qui qui sunt omnis autem.",
+                "globalRank": 34,
+                "ieltsAccepted": false,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:14.000Z",
+                "updatedAt": "2021-07-26T12:48:14.000Z"
+            },
+            {
+                "uniEmail": "alf.gottlieb@hotmail.com",
+                "uniId": 70,
+                "uniUUID": "a02a77a6-50bd-4422-9ccd-431ca508fd95",
+                "name": "Hamill - Ziemann",
+                "childOf": null,
+                "campusOf": null,
+                "city": "g",
+                "stateId": 127,
+                "overview": "Quis qui distinctio repellat id hic nobis. Perferendis id ea. Aut nemo aliquam reprehenderit aspernatur amet ab. Tenetur unde quam non dolores aut dolor.\n \rVoluptatem consequatur nihil reprehenderit ducimus. Rem nobis voluptates molestias nobis sed tenetur. Est quia voluptatum sint omnis quia autem. Aliquid quaerat debitis eius assumenda. Sit explicabo ut fugiat.",
+                "globalRank": 48,
+                "ieltsAccepted": true,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "twila43@yahoo.com",
+                "uniId": 71,
+                "uniUUID": "aaf31d02-c130-4408-84ce-22d054983770",
+                "name": "Howe - Stokes",
+                "childOf": null,
+                "campusOf": null,
+                "city": "p",
+                "stateId": 20,
+                "overview": "Blanditiis est illo neque eum repellendus omnis cupiditate sunt. Dolorem ut voluptas aliquid iusto. Ullam magni ullam. Earum sunt suscipit porro reprehenderit et soluta aspernatur nesciunt iste. Perferendis esse nihil totam corrupti ad id. Voluptas rem iure voluptatem.\n \rLaboriosam deleniti quia. Officiis minus sint quod recusandae. Esse quo commodi molestias. Adipisci quas corporis. Sed sequi et ab laboriosam rem vitae ad in perferendis.",
+                "globalRank": 33,
+                "ieltsAccepted": false,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "emerald24@gmail.com",
+                "uniId": 72,
+                "uniUUID": "a4a48ea5-b40a-46ad-8867-a540a69946b0",
+                "name": "Prosacco - Zemlak",
+                "childOf": null,
+                "campusOf": null,
+                "city": "n",
+                "stateId": 145,
+                "overview": "Qui maiores cupiditate autem nisi illo possimus. Sequi error alias eaque nesciunt maxime possimus quia. Odio ea ullam nulla occaecati est velit nostrum. Quia amet facere ut modi voluptatem. Voluptatem et aut.\n \rEa eos sed dolorem accusamus molestiae. Eum distinctio consequatur cum. Vel voluptatem quia recusandae molestiae sed suscipit.",
+                "globalRank": 20,
+                "ieltsAccepted": false,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "jeramie_marks@yahoo.com",
+                "uniId": 73,
+                "uniUUID": "a116c1d8-7521-46f0-a6f6-a13d5ae6ffb9",
+                "name": "Stiedemann LLC",
+                "childOf": null,
+                "campusOf": null,
+                "city": "y",
+                "stateId": 51,
+                "overview": "Fuga ut rerum laborum nisi officia dolor. Eum perspiciatis cum veniam voluptas esse perferendis quia est vel. Facilis maxime et cupiditate dolor ratione velit aut. Ea quia praesentium consequuntur est adipisci est doloribus. Ut voluptatem enim recusandae. Velit voluptatem nemo odit perspiciatis consequatur omnis quasi.\n \rAmet cumque est occaecati quis eaque dolore. Quaerat ut sed voluptatem distinctio voluptas vero et. In eligendi sint veritatis non distinctio et. Et quam velit molestiae quisquam sunt.",
+                "globalRank": 47,
+                "ieltsAccepted": true,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "gustave_lueilwitz88@yahoo.com",
+                "uniId": 74,
+                "uniUUID": "57edd238-31b3-4526-85a4-299cca4cdba2",
+                "name": "Emmerich - Senger",
+                "childOf": null,
+                "campusOf": null,
+                "city": "m",
+                "stateId": 81,
+                "overview": "Iste maiores atque recusandae totam suscipit delectus quia veritatis. Voluptatem laborum possimus. Rerum autem qui quidem voluptatem et animi est. Asperiores asperiores aut reiciendis nulla qui quia suscipit et eos. Nesciunt aliquam quaerat quisquam ullam sunt.\n \rAut eum enim illo. Ducimus aperiam quibusdam omnis illo et esse. Nostrum porro rem dolores. Ab numquam hic. Sint temporibus recusandae aspernatur ut voluptas voluptates fugit aspernatur.",
+                "globalRank": 61,
+                "ieltsAccepted": false,
+                "countryId": 221,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "sonny99@hotmail.com",
+                "uniId": 75,
+                "uniUUID": "52eb0229-7ec5-4634-8de3-10d2107ad77d",
+                "name": "Hintz Inc",
+                "childOf": null,
+                "campusOf": null,
+                "city": "t",
+                "stateId": 37,
+                "overview": "Quas hic nam aut optio tempore omnis quis ut eaque. Omnis delectus ut explicabo nisi debitis quibusdam esse voluptatem. Mollitia nihil fugiat hic non. Architecto maiores enim qui. Voluptates maiores ad quis ut harum magni eum deleniti.\n \rEaque reprehenderit qui aut qui quam sed vero necessitatibus. Id magni est placeat id omnis placeat quia. Consequatur et assumenda culpa dolores in. Minima sunt voluptates placeat magni perspiciatis laboriosam praesentium voluptatem.",
+                "globalRank": 141,
+                "ieltsAccepted": true,
+                "countryId": 223,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "bessie_stamm66@gmail.com",
+                "uniId": 76,
+                "uniUUID": "e50b686f-89c1-41e0-a07b-17229a7b1460",
+                "name": "Grady - Champlin",
+                "childOf": null,
+                "campusOf": null,
+                "city": "j",
+                "stateId": 53,
+                "overview": "Autem iste assumenda et impedit harum ut eos numquam quos. Illo ut voluptatem. Explicabo est rerum numquam distinctio perferendis dolore. Maxime accusantium ea aut blanditiis quia amet. Sapiente fuga facere rerum.\n \rQui laboriosam autem illum non provident deserunt tenetur rerum molestiae. Quod tempora numquam dicta qui. Dolorum laudantium dolores quas nisi optio incidunt praesentium sunt non. Doloremque minus sit ullam.",
+                "globalRank": 72,
+                "ieltsAccepted": true,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "josianne16@hotmail.com",
+                "uniId": 77,
+                "uniUUID": "0351cf0d-b2b5-4644-9473-fc21772278bb",
+                "name": "Oberbrunner - Hahn",
+                "childOf": null,
+                "campusOf": null,
+                "city": "s",
+                "stateId": 30,
+                "overview": "Sed et blanditiis distinctio sunt sit commodi consequatur sunt. Earum repudiandae at et corporis ab veritatis. Quia dicta quas.\n \rDolorum ea voluptas maiores quis sed. Quia doloribus eum. Quasi et tempora officia inventore. Totam voluptatum reprehenderit soluta et nesciunt molestiae voluptas ut voluptatem. Fugiat voluptatibus enim non. Dolores facere ut occaecati voluptatem culpa.",
+                "globalRank": 105,
+                "ieltsAccepted": true,
+                "countryId": 97,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "maureen.damore15@yahoo.com",
+                "uniId": 78,
+                "uniUUID": "a6e04ee4-8486-450a-aeaf-8564ba0c1a0f",
+                "name": "Boehm, O'Hara and Lindgren",
+                "childOf": null,
+                "campusOf": null,
+                "city": "e",
+                "stateId": 47,
+                "overview": "Molestiae quibusdam dolorum suscipit atque debitis non fugiat. Ipsum eum eaque deserunt sit molestiae eum. Expedita dolorum dignissimos voluptatibus. Quia beatae velit possimus ullam unde minus occaecati autem. Eveniet veritatis architecto incidunt iusto tempore ad deleniti rerum cupiditate.\n \rVitae est sit voluptatem cupiditate ex nobis. Eaque enim beatae atque enim omnis distinctio sunt doloremque eos. Doloremque laboriosam ut itaque pariatur nihil reiciendis. Vero sapiente eos aut aliquam mollitia quia ut quas.",
+                "globalRank": 149,
+                "ieltsAccepted": false,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "jevon_windler89@hotmail.com",
+                "uniId": 79,
+                "uniUUID": "278a2554-d086-4f5d-b283-8a0d3f4c5341",
+                "name": "McCullough Group",
+                "childOf": null,
+                "campusOf": null,
+                "city": "f",
+                "stateId": 24,
+                "overview": "Totam ut ducimus molestiae. Qui facilis ea. Sit modi deleniti nam doloribus id praesentium molestiae temporibus ipsum. Quia autem ut aut minus.\n \rQui optio ut vel sapiente est voluptas esse est quia. Possimus asperiores placeat nisi. Dolorem ea sit sed aut. Esse nam non eum voluptas. Quis culpa atque quia neque id et reiciendis.",
+                "globalRank": 58,
+                "ieltsAccepted": false,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "creola.bode@gmail.com",
+                "uniId": 80,
+                "uniUUID": "ccf3993e-9544-43bb-bec3-4e1429264d7c",
+                "name": "Sauer - Lehner",
+                "childOf": null,
+                "campusOf": null,
+                "city": "f",
+                "stateId": 144,
+                "overview": "Atque et animi voluptatem dolor voluptas dolorem. Nihil expedita et debitis. Veniam reiciendis vel.\n \rAssumenda quis tempora molestiae nobis laborum. Ut velit eos itaque aliquid earum numquam quo expedita. Eum voluptatem at ullam nemo ut ut aspernatur maiores quasi. Fuga ea quam numquam quis rerum ullam ducimus at. Tenetur aut dolore voluptates quaerat maiores fugit accusantium similique. Veritatis qui voluptate aut maxime quo ut eos.",
+                "globalRank": 68,
+                "ieltsAccepted": true,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "carli.weimann@gmail.com",
+                "uniId": 81,
+                "uniUUID": "bb11660b-831a-4f1b-abdf-9b0963911faa",
+                "name": "Mills - Wiegand",
+                "childOf": null,
+                "campusOf": null,
+                "city": "n",
+                "stateId": 19,
+                "overview": "Perspiciatis quibusdam ut rerum blanditiis amet odit enim voluptatem. Voluptatem commodi assumenda est vel ipsam autem nemo magnam. Expedita quis fuga corrupti maiores nihil sed cum labore aut.\n \rCum perspiciatis dignissimos harum exercitationem tempora saepe consequatur sed porro. Exercitationem consequuntur nihil in fugit hic non veniam illum. Sequi omnis est saepe voluptas dolorem rerum sunt aut et. Perferendis quo nesciunt non. Culpa ut vitae est cupiditate nihil. Corporis ea maxime.",
+                "globalRank": 85,
+                "ieltsAccepted": true,
+                "countryId": 221,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "domenico21@gmail.com",
+                "uniId": 82,
+                "uniUUID": "949a209b-df15-4a8f-8a5c-09107e2bb23d",
+                "name": "Wilderman, Nicolas and Langworth",
+                "childOf": null,
+                "campusOf": null,
+                "city": "m",
+                "stateId": 31,
+                "overview": "Debitis quo quia reprehenderit ut laborum voluptatum nulla alias. Eveniet similique doloremque maiores ea similique. Dolorem ab accusamus porro non commodi ea quisquam qui quos.\n \rOmnis fugiat velit rem impedit soluta sequi aperiam assumenda qui. Illo repudiandae pariatur corporis. Et earum dolorum dolores ut eum voluptas enim deleniti dicta. Error repellat blanditiis.",
+                "globalRank": 126,
+                "ieltsAccepted": true,
+                "countryId": 223,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "harrison_howell@hotmail.com",
+                "uniId": 83,
+                "uniUUID": "5c5cacb0-1fb0-4269-91e9-ce35c9a0ebc8",
+                "name": "Wilkinson, Stokes and Raynor",
+                "childOf": null,
+                "campusOf": null,
+                "city": "n",
+                "stateId": 148,
+                "overview": "Explicabo non nam nihil ipsam. Occaecati et voluptas dignissimos aliquid ullam. Quis quaerat sapiente non aperiam quis voluptatibus. Sed exercitationem aut assumenda quis quo. Aut autem atque rerum optio necessitatibus rem.\n \rUt quas omnis praesentium voluptas fuga iusto omnis. Ipsam rerum ratione consequatur iusto eum. Nemo sed possimus voluptatem dolore cupiditate commodi accusantium. Eum repudiandae recusandae similique quos. Iusto provident quia et et aut ducimus deserunt.",
+                "globalRank": 89,
+                "ieltsAccepted": false,
+                "countryId": 221,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "edwina_toy24@yahoo.com",
+                "uniId": 84,
+                "uniUUID": "991bf280-2807-4155-8b1b-69c9fe7a95d0",
+                "name": "Shields, Watsica and Roob",
+                "childOf": null,
+                "campusOf": null,
+                "city": "r",
+                "stateId": 70,
+                "overview": "Consequuntur deserunt qui consectetur rerum voluptate ab sunt velit quam. Quas quia atque veritatis numquam. Odit placeat non rerum in placeat est dolores accusantium aperiam. Modi quis accusamus et. Non quasi atque. Sed amet suscipit non accusantium.\n \rVoluptas velit ut soluta illo. Omnis dignissimos qui et illum consequatur deserunt vel sed. Tenetur at sunt. Quis sed nesciunt. Repellendus corporis aut laudantium repudiandae soluta. Qui quia eveniet quibusdam quae labore eum provident aspernatur ad.",
+                "globalRank": 32,
+                "ieltsAccepted": false,
+                "countryId": 97,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "carolanne.wisozk82@gmail.com",
+                "uniId": 85,
+                "uniUUID": "49a45cf6-f766-4d7c-ae0c-1cbb40638a92",
+                "name": "Klein, Williamson and Shanahan",
+                "childOf": null,
+                "campusOf": null,
+                "city": "a",
+                "stateId": 22,
+                "overview": "Maxime aut et dolor sit ut est ea. Autem non sed aut quia et eaque architecto. Minus aut ab velit rem nostrum cupiditate sit odit. Error sunt corporis commodi voluptas.\n \rRepudiandae odio culpa. Vel a odit. Laudantium soluta ut. Odit perferendis consequuntur quia dolorem officia velit qui.",
+                "globalRank": 123,
+                "ieltsAccepted": true,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "savannah33@hotmail.com",
+                "uniId": 86,
+                "uniUUID": "a32da027-a9d9-45ba-8761-51ee8ca24719",
+                "name": "Leffler, Christiansen and Vandervort",
+                "childOf": null,
+                "campusOf": null,
+                "city": "f",
+                "stateId": 67,
+                "overview": "Velit et sint laboriosam asperiores dolorem eos quidem. Labore consequatur officiis et. Eos id ut molestias nam exercitationem rerum quo et. Officiis tempora perferendis. Earum voluptates laborum perspiciatis.\n \rOdit cumque suscipit quia. Nemo odio explicabo. Et pariatur et autem repellat maiores. Expedita sed debitis ut occaecati et temporibus molestiae in. Debitis qui est quisquam earum cupiditate quasi voluptas. Quia aut sed iusto accusantium fugiat voluptate facere at.",
+                "globalRank": 133,
+                "ieltsAccepted": false,
+                "countryId": 223,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "liliane83@gmail.com",
+                "uniId": 87,
+                "uniUUID": "2579d140-f1d0-4093-8cdc-b322c9c0700f",
+                "name": "Leuschke LLC",
+                "childOf": null,
+                "campusOf": null,
+                "city": "t",
+                "stateId": 127,
+                "overview": "Eius aut odit quaerat sequi rem sed dolorum suscipit. Voluptatem aut sint culpa labore ut corporis. Velit sint rerum dolores et dolore.\n \rAut incidunt provident voluptatem suscipit. Nobis sapiente assumenda cum. Eos aut vero maxime voluptate deserunt molestiae. Ut est dolores sunt quas unde quia minima quo recusandae.",
+                "globalRank": 62,
+                "ieltsAccepted": true,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:15.000Z",
+                "updatedAt": "2021-07-26T12:48:15.000Z"
+            },
+            {
+                "uniEmail": "raphael.kertzmann@hotmail.com",
+                "uniId": 88,
+                "uniUUID": "cb576765-66fa-457c-b2ae-414fb8a813d3",
+                "name": "Mayert, Armstrong and Casper",
+                "childOf": null,
+                "campusOf": null,
+                "city": "p",
+                "stateId": 2,
+                "overview": "Dolorum eligendi eius. Accusantium quia distinctio autem nemo consequatur sed eligendi facere animi. Placeat deserunt laboriosam.\n \rConsequatur quaerat labore expedita et. Occaecati consequatur ipsum cumque. Et quo in laudantium. Quae nihil doloremque eligendi fugit unde non. Voluptates repellendus dolores nam amet. Consectetur est possimus fugiat.",
+                "globalRank": 53,
+                "ieltsAccepted": true,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:16.000Z",
+                "updatedAt": "2021-07-26T12:48:16.000Z"
+            },
+            {
+                "uniEmail": "esteban_schmitt10@yahoo.com",
+                "uniId": 89,
+                "uniUUID": "9989b529-b40b-409c-89df-d6ed0e64a8ae",
+                "name": "Jenkins, Walter and Prosacco",
+                "childOf": null,
+                "campusOf": null,
+                "city": "c",
+                "stateId": 85,
+                "overview": "Ab odit ea itaque doloremque in nemo at nemo est. Animi expedita dolorem velit. Dolorem debitis placeat quo. Necessitatibus quas laboriosam aliquam alias repellendus et quibusdam. Unde vitae incidunt impedit aut voluptatem commodi officiis quaerat. Commodi nostrum doloremque.\n \rPlaceat id esse aut quis cumque suscipit nihil. Eos sunt rerum rerum. Voluptas consequatur iusto.",
+                "globalRank": 23,
+                "ieltsAccepted": false,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:16.000Z",
+                "updatedAt": "2021-07-26T12:48:16.000Z"
+            },
+            {
+                "uniEmail": "hertha_schaden66@hotmail.com",
+                "uniId": 90,
+                "uniUUID": "a103ee39-5c63-4532-9fca-7db34846cae6",
+                "name": "Hagenes - Kuphal",
+                "childOf": null,
+                "campusOf": null,
+                "city": "i",
+                "stateId": 44,
+                "overview": "Aut sunt itaque aspernatur. Tempora autem incidunt est quod laboriosam similique est. Et rerum molestiae ut. Occaecati maiores voluptatem. Adipisci libero minus consequuntur earum quo assumenda libero omnis.\n \rMollitia repellat quae quis labore eius totam. Tempora voluptas repellat sed ipsa. Molestiae et eum in eius. Qui perspiciatis explicabo qui eaque eum iste quis nisi.",
+                "globalRank": 136,
+                "ieltsAccepted": false,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:16.000Z",
+                "updatedAt": "2021-07-26T12:48:16.000Z"
+            },
+            {
+                "uniEmail": "sheldon_goldner10@hotmail.com",
+                "uniId": 91,
+                "uniUUID": "e99ed33b-76ce-4ace-95e5-b4a3f520c575",
+                "name": "Goyette - Carter",
+                "childOf": null,
+                "campusOf": null,
+                "city": "a",
+                "stateId": 64,
+                "overview": "Repellat debitis mollitia in in. Dignissimos ut ut. Minima voluptate eaque ex quis quis. Sit qui eum eligendi possimus laboriosam architecto est et culpa. Occaecati quia enim. Omnis repudiandae a maxime numquam a dolore velit tenetur quod.\n \rTempore doloremque qui officiis quae nulla non. Et laudantium natus rerum. Odit natus error a soluta possimus laboriosam iste enim. Sint distinctio in et.",
+                "globalRank": 79,
+                "ieltsAccepted": true,
+                "countryId": 223,
+                "createdAt": "2021-07-26T12:48:16.000Z",
+                "updatedAt": "2021-07-26T12:48:16.000Z"
+            },
+            {
+                "uniEmail": "clara_luettgen32@hotmail.com",
+                "uniId": 92,
+                "uniUUID": "1531a237-7b21-4d37-aa4c-eac828ba4e72",
+                "name": "Ritchie Group",
+                "childOf": null,
+                "campusOf": null,
+                "city": "g",
+                "stateId": 139,
+                "overview": "Laboriosam ex amet vitae ea nesciunt. Odio cum et sit ullam. Totam repellat officia temporibus accusamus iste rerum. Officiis eos recusandae sed accusantium voluptas officia. Nesciunt voluptatibus quae fugit. Sit provident nobis.\n \rDolor ut hic possimus consequatur voluptatem. Alias rerum maiores voluptatem nostrum aliquam quia quia nemo. Quos reprehenderit rerum sit ab aut recusandae.",
+                "globalRank": 131,
+                "ieltsAccepted": false,
+                "countryId": 38,
+                "createdAt": "2021-07-26T12:48:16.000Z",
+                "updatedAt": "2021-07-26T12:48:16.000Z"
+            },
+            {
+                "uniEmail": "jordon58@yahoo.com",
+                "uniId": 93,
+                "uniUUID": "ffa2d273-e276-4bc6-8b33-f40ae0cf4c44",
+                "name": "Bahringer - Corkery",
+                "childOf": null,
+                "campusOf": null,
+                "city": "y",
+                "stateId": 81,
+                "overview": "Quia autem perspiciatis maiores provident cum aut alias officiis. Consequatur ipsum et explicabo quo est autem aut assumenda. Tempora natus beatae voluptatem sed quia. Non asperiores voluptatum voluptatum deleniti magnam ut. Sequi dolor fuga eos.\n \rConsequuntur quisquam nihil. Perferendis aliquam et qui pariatur autem quos iusto. Nisi ab modi aut cupiditate aspernatur. Placeat eos commodi eius sed id in nesciunt voluptates iusto.",
+                "globalRank": 75,
+                "ieltsAccepted": true,
+                "countryId": 97,
+                "createdAt": "2021-07-26T12:48:16.000Z",
+                "updatedAt": "2021-07-26T12:48:16.000Z"
+            },
+            {
+                "uniEmail": "adan.gorczany7@yahoo.com",
+                "uniId": 94,
+                "uniUUID": "7254b9f2-7ea1-43eb-a624-1eb0a1947180",
+                "name": "Jaskolski, Schneider and Zieme",
+                "childOf": null,
+                "campusOf": null,
+                "city": "v",
+                "stateId": 145,
+                "overview": "Facilis quis cumque similique ut. Modi voluptates voluptatibus illo alias. Alias iure modi velit in cupiditate beatae molestiae ipsam.\n \rNihil atque repellat. Dicta molestiae optio in ea voluptas. Labore consequatur animi. Et saepe magnam perferendis voluptas quasi vitae ullam maxime.",
+                "globalRank": 115,
+                "ieltsAccepted": false,
+                "countryId": 221,
+                "createdAt": "2021-07-26T12:48:16.000Z",
+                "updatedAt": "2021-07-26T12:48:16.000Z"
+            },
+            {
+                "uniEmail": "tyson28@yahoo.com",
+                "uniId": 95,
+                "uniUUID": "e5eeb2ac-192c-46eb-9ad8-a0dc2e13636e",
+                "name": "Schuster - Fay",
+                "childOf": null,
+                "campusOf": null,
+                "city": "n",
+                "stateId": 49,
+                "overview": "Sapiente maiores aut laboriosam. Nobis consectetur a quaerat culpa dicta rerum tenetur qui. Velit libero et. Id mollitia eos nam tenetur nam necessitatibus esse aut.\n \rQui voluptas quae provident molestiae atque aut magnam. Pariatur vel qui reprehenderit eius odit est. Beatae commodi occaecati. Consequatur libero maiores et qui voluptatibus. Impedit soluta fugiat debitis qui praesentium accusantium aut.",
+                "globalRank": 116,
+                "ieltsAccepted": false,
+                "countryId": 93,
+                "createdAt": "2021-07-26T12:48:16.000Z",
+                "updatedAt": "2021-07-26T12:48:16.000Z"
+            },
+            {
+                "uniEmail": "broderick_stamm72@yahoo.com",
+                "uniId": 96,
+                "uniUUID": "215cd46e-a901-4d14-a9e5-ec5ddc5cbd4a",
+                "name": "Bechtelar and Sons",
+                "childOf": null,
+                "campusOf": null,
+                "city": "l",
+                "stateId": 149,
+                "overview": "Est quas repellendus dolore fuga suscipit inventore qui. Aperiam totam facere quod tempora tempore quisquam cupiditate reprehenderit. Sapiente officia iste esse.\n \rEt architecto aut eaque sunt fugit fugiat tempora reprehenderit. Autem ipsum repudiandae. Consequuntur consequatur nobis fugiat blanditiis deleniti. Aut dolor necessitatibus assumenda porro reiciendis occaecati enim voluptatem. Omnis commodi quo animi reiciendis ipsam sit perspiciatis. Quis eos dicta cum accusantium inventore ut illum.",
+                "globalRank": 48,
+                "ieltsAccepted": false,
+                "countryId": 97,
+                "createdAt": "2021-07-26T12:48:16.000Z",
+                "updatedAt": "2021-07-26T12:48:16.000Z"
+            },
+            {
+                "uniEmail": "odie.bayer@gmail.com",
+                "uniId": 97,
+                "uniUUID": "77f52f20-7c75-4ade-bd3c-60408e43ad64",
+                "name": "Kreiger, Welch and Steuber",
+                "childOf": null,
+                "campusOf": null,
+                "city": "q",
+                "stateId": 65,
+                "overview": "Non quae voluptatum qui culpa adipisci laboriosam nemo. Beatae accusamus voluptatem rerum ea voluptatem voluptas pariatur expedita saepe. Est excepturi temporibus aliquam earum soluta alias nemo quaerat eum. Ea error vero suscipit esse quasi consequatur ea exercitationem. Veniam eos fugit sunt. Aut debitis recusandae saepe dolor velit iste sed quisquam voluptate.\n \rEa necessitatibus excepturi. Consequatur minima ut aspernatur est et rerum recusandae repellendus. Asperiores architecto possimus. Dolor odio occaecati nulla quis explicabo ullam eos necessitatibus officia. Natus non quia qui adipisci doloremque aut. Et sunt enim id exercitationem et occaecati iure.",
+                "globalRank": 66,
+                "ieltsAccepted": true,
+                "countryId": 97,
+                "createdAt": "2021-07-26T12:48:16.000Z",
+                "updatedAt": "2021-07-26T12:48:16.000Z"
+            },
+            {
+                "uniEmail": "kamille84@hotmail.com",
+                "uniId": 98,
+                "uniUUID": "2e80201d-cf54-430f-808e-f332f0c41984",
+                "name": "Hickle - Muller",
+                "childOf": null,
+                "campusOf": null,
+                "city": "c",
+                "stateId": 104,
+                "overview": "Ea nam non perferendis tempore incidunt necessitatibus. Error sint aut et rem nam. Quo at odit. Ipsam ea non commodi perferendis.\n \rVoluptatum omnis fuga. Et repellendus velit ut. Maxime et minima qui dolor aut dignissimos reprehenderit nihil.",
+                "globalRank": 148,
+                "ieltsAccepted": true,
+                "countryId": 97,
+                "createdAt": "2021-07-26T12:48:16.000Z",
+                "updatedAt": "2021-07-26T12:48:16.000Z"
+            },
+            {
+                "uniEmail": "delaney.purdy@gmail.com",
+                "uniId": 99,
+                "uniUUID": "d0b025ab-daa0-4ed8-a5e3-940d2d225ec4",
+                "name": "King Inc",
+                "childOf": null,
+                "campusOf": null,
+                "city": "a",
+                "stateId": 24,
+                "overview": "Delectus cupiditate sint dolores in. Repellendus est odit enim accusamus aspernatur ab ut. Nisi aut eos. Non numquam deleniti ipsam.\n \rIpsum pariatur labore sit quia in aut eaque exercitationem. Culpa omnis veritatis aut. Ullam labore aspernatur quia quia voluptatem amet. Ut quo unde quidem id consequatur repellendus. Eos nihil voluptas ullam qui omnis exercitationem provident ea.",
+                "globalRank": 128,
+                "ieltsAccepted": true,
+                "countryId": 221,
+                "createdAt": "2021-07-26T12:48:16.000Z",
+                "updatedAt": "2021-07-26T12:48:16.000Z"
+            },
+            {
+                "uniEmail": "donny.predovic@hotmail.com",
+                "uniId": 100,
+                "uniUUID": "83ed336e-585d-4708-85b7-05905ce67ed5",
+                "name": "Romaguera, Gerlach and Towne",
+                "childOf": null,
+                "campusOf": null,
+                "city": "a",
+                "stateId": 97,
+                "overview": "Tempora quis magnam minus. Cum voluptas explicabo sapiente velit est animi. Dolor aut reiciendis. Voluptatem deleniti facilis voluptas aut placeat nesciunt qui.\n \rDicta et sunt ut. Totam exercitationem vitae est ut rerum facilis molestiae ipsum debitis. Optio id sit ipsam delectus. Quia non alias.",
+                "globalRank": 45,
+                "ieltsAccepted": false,
+                "countryId": 144,
+                "createdAt": "2021-07-26T12:48:16.000Z",
+                "updatedAt": "2021-07-26T12:48:16.000Z"
+            }
+        ]
+    }
+}
