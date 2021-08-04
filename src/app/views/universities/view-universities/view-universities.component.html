@@ -1,1 +1,42 @@
-<p>view-universities works!</p>
+
+
+<div class="card">
+  <div class="card-header">
+    <i class="fa fa-align-justify"></i>  All Universities
+  </div>
+  <div class="card-body">
+    <table class="table table-bordered table-striped table-sm">
+      <thead>
+        <tr>
+          <th><h4>Name</h4></th>
+          <th><h4>Global Rank</h4></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let u of universities">
+        <tr>
+          <th >{{u.name}}</th>
+          <th >{{u.globalRank}}</th>
+          <td>
+            <button class="btn btn-pill btn-success">
+             Show
+            </button>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav>
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+        <li class="page-item active">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>

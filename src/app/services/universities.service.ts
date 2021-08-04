@@ -12,24 +12,9 @@ export class UniversitiesService {
 
   constructor(
     private http: HttpClient,
-    private router: Router,
     private authService : AuthService,
   ) { }
 
-
-  // login(username: string, password: string) {
-  //   const url = `${environment.apiUrl}/tglogin`
-  //   const body = {
-  //     "userEmail": username,
-  //     "userPassword": password
-  //   }
-  //   return this.http.post(url,body,{ responseType: "text"  })
-  //     .pipe(tap(res => {
-  //       localStorage.setItem("token", res);
-  //       this.tokenSubject.next({token: res});
-  //       return res;
-  //     }));
-  // }
 
   addUniversity(university: University) {
     const token = this.authService.loggedInUserValue;
@@ -49,5 +34,10 @@ export class UniversitiesService {
         })
       }
     );
+  }
+
+  getUniversities() {
+    const url = `${environment.apiUrl}/alluniversities`
+    return this.http.get<any>(url);
   }
 }
