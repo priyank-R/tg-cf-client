@@ -1,40 +1,45 @@
-<table class="table table-responsive">
-  <thead>
+<div class="card">
+  <div class="card-header">
+    <i class="fa fa-align-justify"></i>  All Courses
+  </div>
+  <div class="card-body">
+    <table class="table table-bordered table-striped table-sm">
+      <thead>
     <tr>
-      <th >academicRequirements</th>
-      <th >academicTypeId</th>
-      <th >childOf</th>
-      <th >countryId</th>
-      <th >courseTypeId</th>
-      <th >courseUUID</th>
-      <th >duration</th>
-
-      <th >fees</th>
-      <th >intake</th>
-      <th >name</th>
-      <th >otherRequirements</th>
-      <th >prerequisites</th>
-      <th >uniId</th>
-      <th >updatedAt</th>
+      <th ><h4>Name</h4></th>
+      <th ><h4>Duration</h4></th>
+      <th ><h4>Fees</h4></th>
+      <th ><h4>Intake</h4></th>
     </tr>
   </thead>
   <tbody >
     <tr  *ngFor="let c of courses">
-      <th >{{c.academicRequirements}}</th>
-      <th >{{c.academicTypeId}}</th>
-      <th >{{c.childOf}}</th>
-      <th >{{c.countryId}}</th>
-      <th >{{c.courseTypeId}}</th>
-      <th >{{c.courseUUID}}</th>
+
+      <th >{{c.name}}</th>
       <th >{{c.duration}}</th>
 
       <th >{{c.fees}}</th>
       <th >{{c.intake}}</th>
-      <th >{{c.name}}</th>
-      <th >{{c.otherRequirements}}</th>
-      <th >{{c.prerequisites}}</th>
-      <th >{{c.uniId}}</th>
-      <th >{{c.updatedAt}}</th>
+      <td>
+        <button class="btn btn-pill btn-success">
+         Show
+        </button>
+      </td>
     </tr>
   </tbody>
 </table>
+<nav>
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+    <li class="page-item active">
+      <a class="page-link" href="#">1</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+
