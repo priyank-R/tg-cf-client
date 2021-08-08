@@ -9,7 +9,9 @@ import { FormioModule, FormioAppConfig } from 'angular-formio';
 import { AppConfig } from '../../../assets/formio-config';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CommonModule,
     UniversitiesRoutingModule,
     FormioModule,
-    NgbModule
+    NgbModule,
+    BsDropdownModule.forRoot()
 
   ],
   providers: [

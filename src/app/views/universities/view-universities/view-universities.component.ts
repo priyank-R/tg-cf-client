@@ -5,6 +5,7 @@ import { UniversitiesService } from '../../../services/universities.service';
 
 import * as  viewUniversityFormioJson  from '../../../../assets/config/formio/view-university.json';
 import { MapService } from '../../../services/map.service';
+import { AuthService } from '../../../services/auth.service';
 
 @Component({
   selector: 'app-view-universities',
@@ -13,6 +14,7 @@ import { MapService } from '../../../services/map.service';
 })
 export class ViewUniversitiesComponent implements OnInit {
   universities : University [];
+  children : University [];
   closeModal: string;
   form;
   submission;
@@ -22,16 +24,29 @@ export class ViewUniversitiesComponent implements OnInit {
   constructor(
     private universitiesService: UniversitiesService,
     private modalService: NgbModal,
-    private mapService : MapService
+    private mapService : MapService,
+    private authService: AuthService
   ) { }
 
   ngOnInit(): void {
-    this.universitiesService.getUniversities().subscribe(res => {
-      // console.log(res.rows)
-      this.universities = res.rows;
-    });
-    console.log(this.mapService.mapStateIdToStateName(1));
-    console.log(this.mapService.mapStateNameToStateId("Alberta"));
+    this.authService.findisUniUser().subscribe(res => {
+      console.log(res);
+      if(res.isUniUser === true) {
+        this.universitiesService.getUniversitiesForUniUser().subscribe(res => {
+          console.log(res);
+          this.children = res.Children;
+          delete res.Children;
+          this.universities = [res];
+        })
+
+      }
+      else{
+        this.universitiesService.getUniversitiesForTgUser().subscribe(res => {
+          this.universities = res.rows;
+        });
+      }
+    })
+
 
 
     this.form =  ( viewUniversityFormioJson as any ).default;
@@ -43,6 +58,10 @@ export class ViewUniversitiesComponent implements OnInit {
     this.submission = {"data" : university}
     this.modalTitle = university.name;
     this.modalService.open(targetModal , { size: 'lg' } );
+  }
+
+  chooseChildUniversityDropDown(){
+
   }
 
 }

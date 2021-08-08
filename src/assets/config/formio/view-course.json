@@ -1,0 +1,135 @@
+{
+  "components": [
+    {
+      "label": "courseId",
+      "mask": false,
+      "tableView": false,
+      "delimiter": false,
+      "requireDecimal": false,
+      "inputFormat": "plain",
+      "key": "courseId",
+      "type": "number",
+      "input": true
+    },
+    {
+      "label": "courseUUID",
+      "tableView": true,
+      "key": "courseUUID",
+      "type": "textfield",
+      "input": true
+    },
+    {
+      "label": "name",
+      "tableView": true,
+      "key": "name",
+      "type": "textfield",
+      "input": true
+    },
+    {
+      "label": "courseTypeId",
+      "mask": false,
+      "tableView": false,
+      "delimiter": false,
+      "requireDecimal": false,
+      "inputFormat": "plain",
+      "key": "courseTypeId",
+      "type": "number",
+      "input": true
+    },
+    {
+      "label": "countryId",
+      "mask": false,
+      "tableView": false,
+      "delimiter": false,
+      "requireDecimal": false,
+      "inputFormat": "plain",
+      "key": "countryId",
+      "type": "number",
+      "input": true
+    },
+    {
+      "label": "fees",
+      "mask": false,
+      "tableView": false,
+      "delimiter": false,
+      "requireDecimal": false,
+      "inputFormat": "plain",
+      "key": "fees",
+      "type": "number",
+      "input": true
+    },
+    {
+      "label": "duration",
+      "mask": false,
+      "tableView": false,
+      "delimiter": false,
+      "requireDecimal": false,
+      "inputFormat": "plain",
+      "key": "duration",
+      "type": "number",
+      "input": true
+    },
+    {
+      "label": "childOf",
+      "mask": false,
+      "tableView": false,
+      "delimiter": false,
+      "requireDecimal": false,
+      "inputFormat": "plain",
+      "key": "childOf",
+      "type": "number",
+      "input": true
+    },
+    {
+      "label": "uniId",
+      "mask": false,
+      "tableView": false,
+      "delimiter": false,
+      "requireDecimal": false,
+      "inputFormat": "plain",
+      "key": "uniId",
+      "type": "number",
+      "input": true
+    },
+    {
+      "label": "intake",
+      "tableView": true,
+      "key": "intake",
+      "type": "textfield",
+      "input": true
+    },
+    {
+      "label": "academicRequirements",
+      "autoExpand": false,
+      "tableView": true,
+      "key": "academicRequirements",
+      "type": "textarea",
+      "input": true
+    },
+    {
+      "label": "prerequisites",
+      "autoExpand": false,
+      "tableView": true,
+      "key": "prerequisites",
+      "type": "textarea",
+      "input": true
+    },
+    {
+      "label": "otherRequirements",
+      "autoExpand": false,
+      "tableView": true,
+      "key": "otherRequirements",
+      "type": "textarea",
+      "input": true
+    },
+    {
+      "label": "Submit",
+      "showValidations": false,
+      "disableOnInvalid": true,
+      "tableView": false,
+      "key": "submit",
+      "type": "button",
+      "input": true
+    }
+  ]
+}

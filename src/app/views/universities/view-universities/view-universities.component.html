@@ -20,7 +20,19 @@
 
 <div class="card">
   <div class="card-header">
-    <i class="fa fa-align-justify"></i>  All Universities
+    <div class="btn-group" dropdown>
+      <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+              aria-controls="dropdown-basic">
+        Choose Uni <span class="caret"></span>
+      </button>
+      <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+          role="menu" aria-labelledby="button-basic" >
+          <div *ngFor="let c of children">
+            <li role="menuitem"><a class="dropdown-item"  (click)="open(viewUniversity, c)">{{c.name}}</a></li>
+          </div>
+
+      </ul>
+    </div>
   </div>
   <div class="card-body">
     <table class="table table-bordered table-striped table-sm">
