@@ -10,7 +10,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./view-courses.component.scss']
 })
 export class ViewCoursesComponent implements OnInit {
-  courses : any [];
+  courses : any;
   form : any;
   submission : any;
   modalTitle : string;
@@ -24,10 +24,7 @@ export class ViewCoursesComponent implements OnInit {
   ngOnInit() {
     this.form =  ( ViewCourseFormioJson as any ).default;
 
-    this.courseService.getCourses({}).subscribe(res => {
-      console.log(res.rows)
-      this.courses = res.rows;
-    });
+    this.courses = this.courseService.getCourses({})
   }
 
 

@@ -13,7 +13,7 @@ import { AuthService } from '../../../services/auth.service';
   styleUrls: ['./view-universities.component.scss']
 })
 export class ViewUniversitiesComponent implements OnInit {
-  universities : University [];
+  universities : any;
   children : University [];
   closeModal: string;
   form;
@@ -41,9 +41,8 @@ export class ViewUniversitiesComponent implements OnInit {
 
       }
       else{
-        this.universitiesService.getUniversitiesForTgUser().subscribe(res => {
-          this.universities = res.rows;
-        });
+        this.universities = this.universitiesService.getUniversitiesForTgUser();
+
       }
     })
 

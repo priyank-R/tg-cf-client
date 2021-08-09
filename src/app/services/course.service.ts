@@ -2,6 +2,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
 import { AuthService } from './auth.service';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +18,6 @@ export class CourseService {
   getCourses(filter : any) {
     const url = `${environment.apiUrl}/course/filter`
     const body = {}
-    return this.http.post<any>(url,body)
+    return this.http.post<any>(url,body).pipe(map(response => {return response.rows}))
   }
 }

@@ -43,19 +43,20 @@
           <th></th>
         </tr>
       </thead>
-      <tbody *ngFor="let u of universities">
-        <tr>
-          <th >{{u.name}}</th>
-          <th >{{u.globalRank}}</th>
-          <td>
-            <button  (click)="open(viewUniversity, u)" class="btn btn-pill btn-success">
-             Show
-            </button>
+        <tbody *ngFor="let u of universities | async">
+          <tr>
+            <th >{{u.name}}</th>
+            <th >{{u.globalRank}}</th>
+            <td>
+              <button  (click)="open(viewUniversity, u)" class="btn btn-pill btn-success">
+               Show
+              </button>
 
 
-          </td>
-        </tr>
-      </tbody>
+            </td>
+          </tr>
+        </tbody>
+
     </table>
     <nav>
       <ul class="pagination">

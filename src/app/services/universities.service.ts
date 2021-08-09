@@ -1,10 +1,10 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable, OnInit } from '@angular/core';
 import { environment } from '../../environments/environment';
-import { AllUniResponse, Me, University } from '../models';
+import { University } from '../models';
 import { isUniUser } from '../models/isUniUser';
 import { AuthService } from './auth.service';
-import { tap, map } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -47,7 +47,7 @@ export class UniversitiesService implements OnInit {
 
   getUniversitiesForTgUser() {
     const url = `${environment.apiUrl}/alluniversities`
-    return this.http.get<any>(url);
+    return this.http.get<any>(url).pipe(map(response => {return response.rows}))
   }
 
   getUniversitiesForUniUser() {
