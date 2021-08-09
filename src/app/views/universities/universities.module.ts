@@ -8,9 +8,7 @@ import { UniversitiesRoutingModule } from './universities-routing.module';
 import { FormioModule, FormioAppConfig } from 'angular-formio';
 import { AppConfig } from '../../../assets/formio-config';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {NgxPaginationModule} from 'ngx-pagination';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 
@@ -25,7 +23,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     UniversitiesRoutingModule,
     FormioModule,
     NgbModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    NgxPaginationModule
 
   ],
   providers: [

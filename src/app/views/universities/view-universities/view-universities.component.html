@@ -8,7 +8,6 @@
   <div class="modal-body">
     <div class="container">
       <formio [form]="form" [submission]="submission"></formio>
-
     </div>
 
   </div>
@@ -20,7 +19,7 @@
 
 <div class="card">
   <div class="card-header">
-    <div class="btn-group" dropdown>
+    <div *ngIf="children" class="btn-group" dropdown>
       <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
               aria-controls="dropdown-basic">
         Choose Uni <span class="caret"></span>
@@ -30,7 +29,6 @@
           <div *ngFor="let c of children">
             <li role="menuitem"><a class="dropdown-item"  (click)="open(viewUniversity, c)">{{c.name}}</a></li>
           </div>
-
       </ul>
     </div>
   </div>
@@ -43,31 +41,25 @@
           <th></th>
         </tr>
       </thead>
-        <tbody *ngFor="let u of universities | async">
-          <tr>
-            <th >{{u.name}}</th>
-            <th >{{u.globalRank}}</th>
-            <td>
-              <button  (click)="open(viewUniversity, u)" class="btn btn-pill btn-success">
-               Show
-              </button>
+      <tbody *ngIf="universities">
+        <tr *ngFor="let u of universities | paginate: { itemsPerPage: 10, currentPage: currentPageNumber, totalItems: universities.count }">
+          <th >{{u.name}}</th>
+          <th >{{u.globalRank}}</th>
+          <td>
+            <button  (click)="open(viewUniversity, u)" class="btn btn-pill btn-success">
+              Show
+            </button>
 
 
-            </td>
-          </tr>
-        </tbody>
+          </td>
+        </tr>
+      </tbody>
 
     </table>
     <nav>
       <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-        <li class="page-item active">
-          <a class="page-link" href="#">1</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">4</a></li>
-        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        <pagination-controls (pageChange)="currentPageNumber= $event"></pagination-controls>
+
       </ul>
     </nav>
   </div>

@@ -34,8 +34,9 @@
       <th ><h4>Intake</h4></th>
     </tr>
   </thead>
-  <tbody >
-    <tr  *ngFor="let c of courses | async">
+  <tbody *ngIf="courses">
+
+    <tr  *ngFor="let c of courses | paginate: { itemsPerPage: 10, currentPage: currentPageNumber, totalItems: courses.count }">
 
       <th >{{c.name}}</th>
       <th >{{c.duration}}</th>
@@ -52,14 +53,7 @@
 </table>
 <nav>
   <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-    <li class="page-item active">
-      <a class="page-link" href="#">1</a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">4</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      <pagination-controls (pageChange)="currentPageNumber= $event"></pagination-controls>
   </ul>
 </nav>
 </div>

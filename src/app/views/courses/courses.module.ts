@@ -7,6 +7,7 @@ import { CoursesRoutingModule } from './courses-routing.module';
 import { AddCoursesComponent } from './add-courses/add-courses.component';
 import { ViewCoursesComponent } from './view-courses/view-courses.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {NgxPaginationModule} from 'ngx-pagination';
 import { FormioAppConfig, FormioModule } from 'angular-formio';
 import { AppConfig } from '../../../assets/formio-config';
 
@@ -22,7 +23,8 @@ import { AppConfig } from '../../../assets/formio-config';
     CommonModule,
     CoursesRoutingModule,
     NgbModule,
-    FormioModule
+    FormioModule,
+    NgxPaginationModule
   ],
   providers: [
     {provide: FormioAppConfig, useValue: AppConfig},

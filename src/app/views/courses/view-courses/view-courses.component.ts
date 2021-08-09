@@ -14,6 +14,7 @@ export class ViewCoursesComponent implements OnInit {
   form : any;
   submission : any;
   modalTitle : string;
+  currentPageNumber = 1;
 
 
   constructor(
@@ -23,8 +24,11 @@ export class ViewCoursesComponent implements OnInit {
 
   ngOnInit() {
     this.form =  ( ViewCourseFormioJson as any ).default;
-
-    this.courses = this.courseService.getCourses({})
+    this.courseService.getCourses({}).subscribe(
+      res => {
+        this.courses = res;
+      }
+    )
   }
 
 

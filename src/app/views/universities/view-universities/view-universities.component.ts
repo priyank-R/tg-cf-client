@@ -20,6 +20,7 @@ export class ViewUniversitiesComponent implements OnInit {
   submission;
   modalTitle;
   stateMap: Map<number, string>;
+  currentPageNumber = 1;
 
   constructor(
     private universitiesService: UniversitiesService,
@@ -33,16 +34,18 @@ export class ViewUniversitiesComponent implements OnInit {
       console.log(res);
       if(res.isUniUser === true) {
         this.universitiesService.getUniversitiesForUniUser().subscribe(res => {
-          console.log(res);
           this.children = res.Children;
           delete res.Children;
-          this.universities = [res];
+          this.universities = res;
         })
 
       }
       else{
-        this.universities = this.universitiesService.getUniversitiesForTgUser();
+        this.universitiesService.getUniversitiesForTgUser().subscribe(res => {
+          this.universities = res;
+          console.log(res);
 
+        })
       }
     })
 

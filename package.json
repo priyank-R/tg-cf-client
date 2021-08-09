@@ -55,6 +55,7 @@
     "formiojs": "^4.13.4",
     "ng2-charts": "^2.4.2",
     "ngx-bootstrap": "^6.2.0",
+    "ngx-pagination": "^5.1.1",
     "ngx-perfect-scrollbar": "^10.1.0",
     "rxjs": "^6.6.6",
     "simple-line-icons": "^2.5.5",
