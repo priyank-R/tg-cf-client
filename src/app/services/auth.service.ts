@@ -74,4 +74,20 @@ export class AuthService {
     this.loggedUserSubject.next(null);
     this.router.navigate(['/login']);
   }
+
+  getUserEmail() {
+    const url = `${environment.apiUrl}/user/me`
+    return this.http.get<any>(url,
+      {
+        headers: new HttpHeaders(
+        {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${this.loggedInUserValue}`,
+          'Accept': '*/*',
+        })
+      }
+      ).pipe(map(response => {
+      return response.userEmail;
+    }))
+  }
 }

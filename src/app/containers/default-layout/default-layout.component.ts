@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 import { navItems } from '../../_nav';
 
@@ -6,14 +6,18 @@ import { navItems } from '../../_nav';
   selector: 'app-dashboard',
   templateUrl: './default-layout.component.html'
 })
-export class DefaultLayoutComponent{
+export class DefaultLayoutComponent implements OnInit {
   public sidebarMinimized = false;
   public navItems = navItems;
+  public userEmail;
 
   constructor(
     private authService: AuthService
   ){
 
+  }
+  ngOnInit() {
+    this.userEmail = this.authService.getUserEmail();
   }
 
   toggleMinimize(e) {
