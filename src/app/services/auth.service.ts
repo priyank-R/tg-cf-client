@@ -17,7 +17,7 @@ export class AuthService {
 
   constructor(
     private http: HttpClient,
-    // private router: Router
+    private router: Router
   )
   {
         this.getLoggedUser = localStorage.getItem('token');
@@ -69,8 +69,9 @@ export class AuthService {
 
 
 
-  logoutUser() {
+  logout() {
     localStorage.removeItem('token');
     this.loggedUserSubject.next(null);
+    this.router.navigate(['/login']);
   }
 }
