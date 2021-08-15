@@ -38,7 +38,7 @@ export class ViewUniversitiesComponent implements OnInit {
 
           this.children = res.Children;
           delete res.Children;
-          this.universities = res;
+          this.universities = [res];
         })
 
       }
