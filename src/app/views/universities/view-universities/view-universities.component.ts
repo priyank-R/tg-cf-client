@@ -4,8 +4,8 @@ import { University } from '../../../models';
 import { UniversitiesService } from '../../../services/universities.service';
 
 import * as  viewUniversityFormioJson  from '../../../../assets/config/formio/view-university.json';
-import { MapService } from '../../../services/map.service';
 import { AuthService } from '../../../services/auth.service';
+import { LoaderService } from '../../../services/loader.service';
 
 @Component({
   selector: 'app-view-universities',
@@ -25,7 +25,7 @@ export class ViewUniversitiesComponent implements OnInit {
   constructor(
     private universitiesService: UniversitiesService,
     private modalService: NgbModal,
-    private mapService : MapService,
+    public loaderService: LoaderService,
     private authService: AuthService
   ) { }
 
@@ -34,6 +34,8 @@ export class ViewUniversitiesComponent implements OnInit {
       console.log(res);
       if(res.isUniUser === true) {
         this.universitiesService.getUniversitiesForUniUser().subscribe(res => {
+          console.log(res);
+
           this.children = res.Children;
           delete res.Children;
           this.universities = res;

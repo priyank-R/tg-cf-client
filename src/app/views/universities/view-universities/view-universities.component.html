@@ -1,3 +1,6 @@
+
+
+
 <ng-template #viewUniversity let-modal>
   <div class="modal-header">
     <h4 class="modal-title" id="viewUniversity">{{modalTitle}}</h4>
@@ -41,6 +44,10 @@
           <th></th>
         </tr>
       </thead>
+
+      <div *ngIf="loaderService.isLoading | async" class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
       <tbody *ngIf="universities">
         <tr *ngFor="let u of universities | paginate: { itemsPerPage: 10, currentPage: currentPageNumber, totalItems: universities.count }">
           <th >{{u.name}}</th>

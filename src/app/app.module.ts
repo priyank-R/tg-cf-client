@@ -43,9 +43,10 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { CoursesRoutingModule } from './views/courses/courses-routing.module';
 import { UniversitiesRoutingModule } from './views/universities/universities-routing.module';
+import { InterceptorService } from './services/interceptor.service';
 
 @NgModule({
   imports: [
@@ -80,7 +81,11 @@ import { UniversitiesRoutingModule } from './views/universities/universities-rou
     {
       provide: LocationStrategy,
       useClass: HashLocationStrategy,
-
+    },
+    {
+      provide : HTTP_INTERCEPTORS,
+      useClass: InterceptorService,
+      multi: true
     },
 
     IconSetService,

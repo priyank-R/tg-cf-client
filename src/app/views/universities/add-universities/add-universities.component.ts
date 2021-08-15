@@ -3,7 +3,6 @@ import { UniversitiesService } from '../../../services/universities.service';
 
 import * as  addUniversityFormioJson  from '../../../../assets/config/formio/add-university.json';
 
-import { MapService } from '../../../services/map.service';
 
 @Component({
   selector: 'app-add-universities',
@@ -19,7 +18,6 @@ export class AddUniversitiesComponent implements OnInit {
 
   constructor(
     private universitiesService: UniversitiesService,
-    // private mapService: MapService
 
   ) { }
 

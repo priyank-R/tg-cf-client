@@ -3,6 +3,7 @@ import { CourseService } from '../../../services/course.service';
 
 import * as ViewCourseFormioJson from '../../../../assets/config/formio/view-course.json';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { LoaderService } from '../../../services/loader.service';
 
 @Component({
   selector: 'app-view-courses',
@@ -20,6 +21,7 @@ export class ViewCoursesComponent implements OnInit {
   constructor(
     private courseService: CourseService,
     private modalService: NgbModal,
+    public loaderService: LoaderService
   ) { }
 
   ngOnInit() {

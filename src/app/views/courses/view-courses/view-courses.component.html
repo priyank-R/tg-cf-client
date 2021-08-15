@@ -34,6 +34,10 @@
       <th ><h4>Intake</h4></th>
     </tr>
   </thead>
+
+  <div *ngIf="loaderService.isLoading | async" class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
   <tbody *ngIf="courses">
 
     <tr  *ngFor="let c of courses | paginate: { itemsPerPage: 10, currentPage: currentPageNumber, totalItems: courses.count }">
